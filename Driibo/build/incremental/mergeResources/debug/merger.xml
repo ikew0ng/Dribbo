@@ -4,6 +4,11 @@
     <dataSet config="main" >
         <source path="/Users/Issac/workspace/Driibo/Driibo/src/main/res" >
             <file
+                name="main_bg"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable/main_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
                 name="ic_launcher"
                 path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-hdpi/ic_launcher.png"
                 qualifiers="hdpi"
@@ -12,6 +17,26 @@
                 name="ic_launcher"
                 path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-mdpi/ic_launcher.png"
                 qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="bg"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/bg.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="drawer_shadow"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/drawer_shadow.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_actionbar"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/ic_actionbar.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_drawer"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/ic_drawer.png"
+                qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
@@ -29,10 +54,25 @@
                 qualifiers=""
                 type="layout" />
             <file
+                name="fragment_drawer"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/layout/fragment_drawer.xml"
+                qualifiers=""
+                type="layout" />
+            <file
                 name="main"
                 path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/menu/main.xml"
                 qualifiers=""
                 type="menu" />
+            <file
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/values/colors.xml"
+                qualifiers="" >
+                <color name="dribbble_graphite" >#333333
+                </color>
+                <color name="dribbble_pink" >#ea4c89
+                </color>
+                <color name="dribbble_green" >#8aba56
+                </color>
+            </file>
             <file
                 path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/values/dimens.xml"
                 qualifiers="" >
@@ -48,7 +88,13 @@
                 </string>
                 <string name="app_name" >Driibo
                 </string>
+                <string name="action_refresh" >Refresh
+                </string>
                 <string name="hello_world" >Hello world!
+                </string>
+                <string name="drawer_open" >Open navigation drawer
+                </string>
+                <string name="drawer_close" >Close navigation drawer
                 </string>
             </file>
             <file
@@ -87,23 +133,84 @@
                 qualifiers="v11" >
 
                 <style
+                    name="ActionbarStyle"
+                    parent="android:Widget.Holo.Light.ActionBar" >
+                    <item name="android:background">
+@color/dribbble_graphite
+                    </item>
+                    <item name="android:actionOverflowButtonStyle">
+@drawable/ic_action_overflow
+                    </item>
+                </style>
+
+                <style
                     name="AppBaseTheme"
                     parent="android:Theme.Holo.Light" >
 
                     <!-- API 11 theme customizations can go here. -->
+                    <item name="android:windowBackground">
+@drawable/main_bg
+                    </item>
+                    <item name="android:actionBarStyle">
+@style/ActionbarStyle
+                    </item>
                 </style>
             </file>
             <file
-                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/values-v14/styles.xml"
-                qualifiers="v14" >
-
-                <style
-                    name="AppBaseTheme"
-                    parent="android:Theme.Holo.Light.DarkActionBar" >
-
-                    <!-- API 14 theme customizations can go here. -->
-                </style>
-            </file>
+                name="ic_action_overflow"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/ic_action_overflow.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="refresh"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/refresh.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_refresh"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/ic_refresh.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_eye"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/ic_eye.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="bg_drawer_item_selected"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/bg_drawer_item_selected.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_comment"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/ic_comment.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="bg_listitem_shots"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/bg_listitem_shots.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_like"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/ic_like.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="listitem_drawer"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/layout/listitem_drawer.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="drawer_text_selector"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/color/drawer_text_selector.xml"
+                qualifiers=""
+                type="color" />
+            <file
+                name="listitem_drawer_selector"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable/listitem_drawer_selector.xml"
+                qualifiers=""
+                type="drawable" />
         </source>
         <source path="/Users/Issac/workspace/Driibo/Driibo/build/res/rs/debug" />
     </dataSet>

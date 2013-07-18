@@ -10,6 +10,8 @@ apply plugin: 'android'
 
 dependencies {
     compile files('libs/android-support-v4.jar')
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/volley.jar')
 }
 
 android {
