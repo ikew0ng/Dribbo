@@ -25,6 +25,8 @@ public class MainActivity extends FragmentActivity {
 
     private ShotsFragment mContentFragment;
 
+    private Category mCategory;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +54,7 @@ public class MainActivity extends FragmentActivity {
             }
         };
         mDrawerLayout.setDrawerListener(mDrawerToggle);
-        setContentFragment(Category.popular);
+        setCategory(Category.popular);
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.left_drawer, new DrawerFragment()).commit();
     }
@@ -87,8 +89,13 @@ public class MainActivity extends FragmentActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void setContentFragment(Category list) {
-        mContentFragment = ShotsFragment.newInstance(list);
+    public void setCategory(Category category) {
+        mDrawerLayout.closeDrawer(GravityCompat.START);
+        if (mCategory == category) {
+            return;
+        }
+        mCategory = category;
+        mContentFragment = ShotsFragment.newInstance(category);
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.content_frame, mContentFragment).commit();
     }

@@ -1,12 +1,20 @@
 
 package com.refactech.driibo.type.dribble;
 
+import com.google.gson.Gson;
+import com.refactech.driibo.dao.ShotsDataHelper;
+
+import android.database.Cursor;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by Issac on 7/18/13.
  */
-public class Shot {
+public class Shot extends BaseType {
+    private static final HashMap<Long, Shot> CACHE = new HashMap<Long, Shot>();
+
     private long id;
 
     private String title;
@@ -36,6 +44,31 @@ public class Shot {
     private String created_at;
 
     private Player player;
+
+    private static void addToCache(Shot shot) {
+        CACHE.put(shot.getId(), shot);
+    }
+
+    private static Shot getFromCache(long id) {
+        return CACHE.get(id);
+    }
+
+    public static Shot fromJson(String json) {
+        return new Gson().fromJson(json, Shot.class);
+    }
+
+    public static Shot fromCursor(Cursor cursor) {
+        long id = cursor.getLong(cursor.getColumnIndex(ShotsDataHelper.ShotsDBInfo._ID));
+        Shot shot = getFromCache(id);
+        if (shot != null) {
+            return shot;
+        }
+        shot = new Gson().fromJson(
+                cursor.getString(cursor.getColumnIndex(ShotsDataHelper.ShotsDBInfo.JSON)),
+                Shot.class);
+        addToCache(shot);
+        return shot;
+    }
 
     public long getId() {
         return id;

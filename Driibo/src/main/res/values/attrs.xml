@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="bg_listitem_shot" format="reference"/>
+    <attr name="ic_view" format="reference"/>
+    <attr name="ic_comment" format="reference"/>
+    <attr name="ic_like" format="reference"/>
+</resources>

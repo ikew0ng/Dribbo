@@ -7,7 +7,10 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
-    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.refactech.driibo.DriiboApp" android:theme="@style/AppTheme">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.refactech.driibo.AppData" android:theme="@style/AppTheme">
+        <provider android:authorities="com.refactech.provider" android:exported="false" android:name="com.refactech.driibo.dao.DataProvider">
+            <grant-uri-permission android:pathPattern=".*"/>
+        </provider>
         <activity android:label="@string/app_name" android:name="com.refactech.driibo.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

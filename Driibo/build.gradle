@@ -11,7 +11,12 @@ apply plugin: 'android'
 dependencies {
     compile files('libs/android-support-v4.jar')
     compile files('libs/gson-2.2.4.jar')
-    compile files('libs/volley.jar')
+
+    compile project(':Volley')
+}
+
+tasks.withType(Compile) {
+    options.encoding = "UTF-8"
 }
 
 android {

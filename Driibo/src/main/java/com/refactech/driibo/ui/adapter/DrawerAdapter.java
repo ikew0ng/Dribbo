@@ -1,7 +1,7 @@
 
 package com.refactech.driibo.ui.adapter;
 
-import com.refactech.driibo.DriiboApp;
+import com.refactech.driibo.AppData;
 import com.refactech.driibo.R;
 import com.refactech.driibo.type.dribble.Category;
 import com.refactech.driibo.view.CheckableFrameLayout;
@@ -41,7 +41,7 @@ public class DrawerAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
-            convertView = LayoutInflater.from(DriiboApp.getContext()).inflate(
+            convertView = LayoutInflater.from(AppData.getContext()).inflate(
                     R.layout.listitem_drawer, null);
         }
         CheckableFrameLayout holder = (CheckableFrameLayout) convertView;

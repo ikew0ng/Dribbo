@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/dao/BaseDataHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/dao/DataProvider.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/CacheUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/DiskImageCache.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/ImageCache.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/SimpleDiskLruCache.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/BaseSlowAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/ListViewUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/SlowAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/SlowAdapterOnScrollListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/SlowCursorAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/util/ImageUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/util/database/Column.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/util/database/DatabaseUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/util/database/SQLiteTable.java" charset="UTF-8" />
+  </component>
 </project>
 
