@@ -146,6 +146,7 @@ public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderC
             }
         });
 
+        //TODO Share Logic
         // mListView.setOnItemLongClickListener(new
         // AdapterView.OnItemLongClickListener() {
         // @Override
