@@ -20,6 +20,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 /**
@@ -28,14 +29,23 @@ import android.widget.TextView;
 public class ShotsAdapter extends CursorAdapter {
     private LayoutInflater mLayoutInflater;
 
+    private ListView mListView;
+
     private BitmapDrawable mDefaultAvatarBitmap = (BitmapDrawable) AppData.getContext()
             .getResources().getDrawable(R.drawable.default_avatar);
 
     private Drawable mDefaultImageDrawable = new ColorDrawable(Color.argb(255, 201, 201, 201));
 
-    public ShotsAdapter(Context context) {
+    public ShotsAdapter(Context context, ListView listView) {
         super(context, null, false);
         mLayoutInflater = ((Activity) context).getLayoutInflater();
+        mListView = listView;
+    }
+
+    @Override
+    public Shot getItem(int position) {
+        mCursor.moveToPosition(position);
+        return Shot.fromCursor(mCursor);
     }
 
     @Override
@@ -54,12 +64,15 @@ public class ShotsAdapter extends CursorAdapter {
             holder.avartarRequest.cancelRequest();
         }
 
+        view.setEnabled(!mListView.isItemChecked(cursor.getPosition()
+                + mListView.getHeaderViewsCount()));
+
         Shot shot = Shot.fromCursor(cursor);
         holder.imageRequest = RequestManager.loadImage(shot.getImage_url(), RequestManager
                 .getImageListener(holder.image, mDefaultImageDrawable, mDefaultImageDrawable));
         holder.avartarRequest = RequestManager.loadImage(shot.getPlayer().getAvatar_url(),
                 RequestManager.getImageListener(holder.avatar, mDefaultAvatarBitmap,
-                        mDefaultAvatarBitmap), 50, 50);
+                        mDefaultAvatarBitmap));
         holder.title.setText(shot.getTitle());
         holder.userName.setText(shot.getPlayer().getName());
         holder.text_view_count.setText(String.valueOf(shot.getViews_count()));

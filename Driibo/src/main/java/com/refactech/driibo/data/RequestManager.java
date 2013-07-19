@@ -21,9 +21,9 @@ import android.widget.ImageView;
 public class RequestManager {
     public static RequestQueue mRequestQueue = Volley.newRequestQueue(AppData.getContext());
 
-    // 取运行内存阈值的 1/4作为图片缓存
+    // 取运行内存阈值的1/3作为图片缓存
     private static final int MEM_CACHE_SIZE = 1024 * 1024 * ((ActivityManager) AppData.getContext()
-            .getSystemService(Context.ACTIVITY_SERVICE)).getMemoryClass() / 4;
+            .getSystemService(Context.ACTIVITY_SERVICE)).getMemoryClass() / 3;
 
     private static ImageLoader mImageLoader = new ImageLoader(mRequestQueue, new BitmapLruCache(
             MEM_CACHE_SIZE));
@@ -75,7 +75,7 @@ public class RequestManager {
                     } else {
                         view.setImageBitmap(response.getBitmap());
                     }
-                } else if (defaultImageDrawable != null) {
+                } else if (defaultImageDrawable != null) { 
                     view.setImageDrawable(defaultImageDrawable);
                 }
             }

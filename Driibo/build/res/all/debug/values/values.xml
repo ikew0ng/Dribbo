@@ -15,9 +15,11 @@
 
     <string name="action_refresh">Refresh</string>
     <string name="action_settings">Settings</string>
+    <string name="action_share">Share</string>
     <string name="app_name">Driibo</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="drawer_open">Open navigation drawer</string>
+    <string name="refresh_list_failed">Failed to refresh list.</string>
 
     <style name="ActionbarStyle" parent="android:Widget.Holo.Light.ActionBar">
         <item name="android:background">@drawable/actionbar_bg</item>
@@ -27,7 +29,7 @@
     <style name="AppTheme" parent="android:Theme.Holo.Light">
         <item name="android:windowBackground">@drawable/main_bg</item>
         <item name="android:actionBarStyle">@style/ActionbarStyle</item>
-        <item name="bg_listitem_shot">@drawable/bg_listitem_shot</item>
+        <item name="bg_listitem_shot">@drawable/listitem_shot_selector</item>
         <item name="ic_view">@drawable/ic_view</item>
         <item name="ic_like">@drawable/ic_like</item>
         <item name="ic_comment">@drawable/ic_comment</item>

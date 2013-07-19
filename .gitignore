@@ -24,3 +24,5 @@ local.properties
 .idea/
 .gradle
 build/
+*.keystore
+

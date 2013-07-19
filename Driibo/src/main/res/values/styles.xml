@@ -3,7 +3,7 @@
     <style name="AppTheme" parent="android:Theme.Holo.Light">
         <item name="android:windowBackground">@drawable/main_bg</item>
         <item name="android:actionBarStyle">@style/ActionbarStyle</item>
-        <item name="bg_listitem_shot">@drawable/bg_listitem_shot</item>
+        <item name="bg_listitem_shot">@drawable/listitem_shot_selector</item>
         <item name="ic_view">@drawable/ic_view</item>
         <item name="ic_like">@drawable/ic_like</item>
         <item name="ic_comment">@drawable/ic_comment</item>

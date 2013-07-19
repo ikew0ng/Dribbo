@@ -21,7 +21,7 @@ public class ListViewUtils {
             public void run() {
                 listView.setSelection(0);
             }
-        }, 300);
+        }, 200);
     }
 
     /**
@@ -34,7 +34,7 @@ public class ListViewUtils {
      */
     public static void smoothScrollListView(ListView listView, int position) {
         if (VERSION.SDK_INT > 7) {
-            listView.smoothScrollToPosition(position);
+            listView.smoothScrollToPositionFromTop(0, 0);
         } else {
             listView.setSelection(position);
         }

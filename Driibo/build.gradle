@@ -18,6 +18,9 @@ tasks.withType(Compile) {
     options.encoding = "UTF-8"
 }
 
+String VERSION_NAME = "1.0.0"
+int VERSION_CODE = 1
+
 android {
     compileSdkVersion 17
     buildToolsVersion "17.0.0"
@@ -25,5 +28,22 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 16
+        versionCode VERSION_CODE
+        versionName VERSION_NAME
+    }
+
+    signingConfigs {
+        driibo {
+            storeFile file("../RefacTech.keystore")
+            storePassword "RefacTech"
+            keyAlias "Driibo"
+            keyPassword "RefacTech"
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.driibo
+        }
     }
 }

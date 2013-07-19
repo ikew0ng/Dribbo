@@ -14,6 +14,11 @@
                 qualifiers=""
                 type="drawable" />
             <file
+                name="listitem_shot_selector"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable/listitem_shot_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
                 name="main_bg"
                 path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable/main_bg.xml"
                 qualifiers=""
@@ -49,6 +54,11 @@
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
+                name="bg_listitem_shot_selected"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/bg_listitem_shot_selected.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
                 name="default_avatar"
                 path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/default_avatar.png"
                 qualifiers="xhdpi"
@@ -56,6 +66,11 @@
             <file
                 name="drawer_shadow"
                 path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/drawer_shadow.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="genymotion-1"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/genymotion-1.1.0.dmg"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
@@ -94,6 +109,11 @@
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
+                name="ic_share"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/ic_share.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
                 name="ic_view"
                 path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/ic_view.png"
                 qualifiers="xhdpi"
@@ -129,6 +149,11 @@
                 qualifiers=""
                 type="layout" />
             <file
+                name="context_menu"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/menu/context_menu.xml"
+                qualifiers=""
+                type="menu" />
+            <file
                 name="main"
                 path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/menu/main.xml"
                 qualifiers=""
@@ -140,10 +165,10 @@
                     name="ic_like"
                     format="reference" />
                 <attr
-                    name="ic_comment"
+                    name="ic_view"
                     format="reference" />
                 <attr
-                    name="ic_view"
+                    name="ic_comment"
                     format="reference" />
                 <attr
                     name="bg_listitem_shot"
@@ -154,9 +179,9 @@
                 qualifiers="" >
                 <color name="dribbble_graphite" >#333333
                 </color>
-                <color name="dribbble_green" >#8aba56
-                </color>
                 <color name="dribbble_pink" >#ea4c89
+                </color>
+                <color name="dribbble_green" >#8aba56
                 </color>
             </file>
             <file
@@ -174,11 +199,15 @@
                 </string>
                 <string name="app_name" >Driibo
                 </string>
+                <string name="action_share" >Share
+                </string>
                 <string name="action_refresh" >Refresh
                 </string>
                 <string name="drawer_open" >Open navigation drawer
                 </string>
                 <string name="drawer_close" >Close navigation drawer
+                </string>
+                <string name="refresh_list_failed" >Failed to refresh list.
                 </string>
             </file>
             <file
@@ -206,7 +235,7 @@
 @style/ActionbarStyle
                     </item>
                     <item name="bg_listitem_shot">
-@drawable/bg_listitem_shot
+@drawable/listitem_shot_selector
                     </item>
                     <item name="ic_view">
 @drawable/ic_view

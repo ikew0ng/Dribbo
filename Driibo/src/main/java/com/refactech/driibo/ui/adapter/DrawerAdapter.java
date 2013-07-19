@@ -4,7 +4,6 @@ package com.refactech.driibo.ui.adapter;
 import com.refactech.driibo.AppData;
 import com.refactech.driibo.R;
 import com.refactech.driibo.type.dribble.Category;
-import com.refactech.driibo.view.CheckableFrameLayout;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,8 +43,7 @@ public class DrawerAdapter extends BaseAdapter {
             convertView = LayoutInflater.from(AppData.getContext()).inflate(
                     R.layout.listitem_drawer, null);
         }
-        CheckableFrameLayout holder = (CheckableFrameLayout) convertView;
-        TextView textView = (TextView) holder.findViewById(R.id.textView);
+        TextView textView = (TextView) convertView.findViewById(R.id.textView);
         textView.setText(getItem(position).getDisplayName());
         textView.setSelected(mListView.isItemChecked(position));
         return convertView;
