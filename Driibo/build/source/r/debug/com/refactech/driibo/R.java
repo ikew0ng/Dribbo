@@ -41,35 +41,36 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int bg=0x7f020001;
         public static final int bg_drawer_item_selected=0x7f020002;
         public static final int bg_listitem_shot=0x7f020003;
-        public static final int drawer_shadow=0x7f020004;
-        public static final int ic_action_overflow=0x7f020005;
-        public static final int ic_actionbar=0x7f020006;
-        public static final int ic_comment=0x7f020007;
-        public static final int ic_drawer=0x7f020008;
-        public static final int ic_launcher=0x7f020009;
-        public static final int ic_like=0x7f02000a;
-        public static final int ic_refresh=0x7f02000b;
-        public static final int ic_view=0x7f02000c;
-        public static final int listitem_drawer_selector=0x7f02000d;
-        public static final int main_bg=0x7f02000e;
+        public static final int default_avatar=0x7f020004;
+        public static final int drawer_shadow=0x7f020005;
+        public static final int ic_action_overflow=0x7f020006;
+        public static final int ic_actionbar=0x7f020007;
+        public static final int ic_comment=0x7f020008;
+        public static final int ic_drawer=0x7f020009;
+        public static final int ic_launcher=0x7f02000a;
+        public static final int ic_like=0x7f02000b;
+        public static final int ic_refresh=0x7f02000c;
+        public static final int ic_view=0x7f02000d;
+        public static final int listitem_drawer_selector=0x7f02000e;
+        public static final int main_bg=0x7f02000f;
     }
     public static final class id {
         public static final int action_refresh=0x7f09000f;
         public static final int action_settings=0x7f09000e;
-        public static final int avartar=0x7f090006;
+        public static final int avatar=0x7f090006;
         public static final int content_frame=0x7f090001;
         public static final int drawer_layout=0x7f090000;
         public static final int image=0x7f090005;
-        public static final int layout_count=0x7f090009;
+        public static final int layout_count=0x7f090007;
         public static final int left_drawer=0x7f090002;
         public static final int listView=0x7f090003;
         public static final int textView=0x7f090004;
-        public static final int text_comment_count=0x7f09000b;
-        public static final int text_like_count=0x7f09000c;
-        public static final int text_view_count=0x7f09000a;
+        public static final int text_comment_count=0x7f090009;
+        public static final int text_like_count=0x7f09000a;
+        public static final int text_view_count=0x7f090008;
         public static final int time=0x7f09000d;
-        public static final int title=0x7f090007;
-        public static final int userName=0x7f090008;
+        public static final int title=0x7f09000b;
+        public static final int userName=0x7f09000c;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

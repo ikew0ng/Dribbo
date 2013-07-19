@@ -2,18 +2,24 @@
 package com.refactech.driibo.ui.adapter;
 
 import com.android.volley.toolbox.ImageLoader;
-import com.android.volley.toolbox.NetworkImageView;
+import com.refactech.driibo.AppData;
 import com.refactech.driibo.R;
 import com.refactech.driibo.data.RequestManager;
 import com.refactech.driibo.type.dribble.Shot;
+import com.refactech.driibo.util.TimeUtils;
 
 import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
+import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.support.v4.widget.CursorAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -21,6 +27,11 @@ import android.widget.TextView;
  */
 public class ShotsAdapter extends CursorAdapter {
     private LayoutInflater mLayoutInflater;
+
+    private BitmapDrawable mDefaultAvatarBitmap = (BitmapDrawable) AppData.getContext()
+            .getResources().getDrawable(R.drawable.default_avatar);
+
+    private Drawable mDefaultImageDrawable = new ColorDrawable(Color.argb(255, 201, 201, 201));
 
     public ShotsAdapter(Context context) {
         super(context, null, false);
@@ -44,15 +55,17 @@ public class ShotsAdapter extends CursorAdapter {
         }
 
         Shot shot = Shot.fromCursor(cursor);
-        holder.imageRequest = RequestManager.loadImage(shot.getImage_url(),
-                ImageLoader.getImageListener(holder.image, null, null));
+        holder.imageRequest = RequestManager.loadImage(shot.getImage_url(), RequestManager
+                .getImageListener(holder.image, mDefaultImageDrawable, mDefaultImageDrawable));
         holder.avartarRequest = RequestManager.loadImage(shot.getPlayer().getAvatar_url(),
-                ImageLoader.getImageListener(holder.avartar, null, null), 50, 50);
+                RequestManager.getImageListener(holder.avatar, mDefaultAvatarBitmap,
+                        mDefaultAvatarBitmap), 50, 50);
         holder.title.setText(shot.getTitle());
         holder.userName.setText(shot.getPlayer().getName());
         holder.text_view_count.setText(String.valueOf(shot.getViews_count()));
         holder.text_like_count.setText(String.valueOf(shot.getLikes_count()));
         holder.text_comment_count.setText(String.valueOf(shot.getComments_count()));
+        holder.time.setText(TimeUtils.getListTime(shot.getCreated_at()));
     }
 
     private Holder getHolder(final View view) {
@@ -65,9 +78,9 @@ public class ShotsAdapter extends CursorAdapter {
     }
 
     private class Holder {
-        public NetworkImageView image;
+        public ImageView image;
 
-        public NetworkImageView avartar;
+        public ImageView avatar;
 
         public TextView title;
 
@@ -79,18 +92,21 @@ public class ShotsAdapter extends CursorAdapter {
 
         public TextView text_like_count;
 
+        public TextView time;
+
         public ImageLoader.ImageContainer imageRequest;
 
         public ImageLoader.ImageContainer avartarRequest;
 
         public Holder(View view) {
-            image = (NetworkImageView) view.findViewById(R.id.image);
-            avartar = (NetworkImageView) view.findViewById(R.id.avartar);
+            image = (ImageView) view.findViewById(R.id.image);
+            avatar = (ImageView) view.findViewById(R.id.avatar);
             title = (TextView) view.findViewById(R.id.title);
             userName = (TextView) view.findViewById(R.id.userName);
             text_view_count = (TextView) view.findViewById(R.id.text_view_count);
             text_comment_count = (TextView) view.findViewById(R.id.text_comment_count);
             text_like_count = (TextView) view.findViewById(R.id.text_like_count);
+            time = (TextView) view.findViewById(R.id.time);
         }
     }
 }

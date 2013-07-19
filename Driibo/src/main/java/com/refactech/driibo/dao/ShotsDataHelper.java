@@ -79,7 +79,7 @@ public class ShotsDataHelper extends BaseDataHelper {
         return new CursorLoader(getContext(), getContentUri(), null, ShotsDBInfo.CATEGORY + "=?",
                 new String[] {
                     String.valueOf(mCategory.ordinal())
-                }, ShotsDBInfo.ID + " DESC");
+                }, ShotsDBInfo._ID + " ASC");
     }
 
     public static final class ShotsDBInfo implements BaseColumns {

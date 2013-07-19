@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merger>
 
-    <dataSet config="Volley.aar" >
-        <source path="/Users/Issac/workspace/Driibo/Driibo/build/exploded-bundles/Volley.aar/res" />
-    </dataSet>
     <dataSet config="main" >
         <source path="/Users/Issac/workspace/Driibo/Driibo/src/main/res" >
             <file
@@ -49,6 +46,11 @@
             <file
                 name="bg_listitem_shot"
                 path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/bg_listitem_shot.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="default_avatar"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/drawable-xhdpi/default_avatar.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file

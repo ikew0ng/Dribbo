@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merger>
 
+    <dataSet config="Volley.aar" >
+        <source path="/Users/Issac/workspace/Driibo/Driibo/build/exploded-bundles/Volley.aar/assets" />
+    </dataSet>
     <dataSet config="main" >
         <source path="/Users/Issac/workspace/Driibo/Driibo/src/main/assets" />
     </dataSet>

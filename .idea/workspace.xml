@@ -17,61 +17,111 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9a209b6-a6c5-4084-b1ac-b110292fab12" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/dao/BaseDataHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/BaseSlowAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/type/dribble/BaseType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/CacheUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/util/database/Column.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/util/CommonUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/dao/DataProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/util/database/DatabaseUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/ImageCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/util/ImageUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/ListViewUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/util/database/SQLiteTable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/ShotsAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/dao/ShotsDataHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/SimpleDiskLruCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/SlowAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/SlowAdapterOnScrollListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/SlowCursorAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/res/values/attrs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/res/layout/fragment_content.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/res/layout/listitem_shot.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Driibo/build/res/all/debug/values-sw720dp-land/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Driibo/build/res/all/debug/values-v11/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Driibo/libs/volley.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Driibo/src/main/ic_launcher-web.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Driibo/src/main/res/values-sw600dp/dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Driibo/src/main/res/values-sw720dp-land/dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Driibo/src/main/res/values-v11/styles.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/DriiboApp.java" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/AppData.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Driibo/src/main/res/drawable-xhdpi/bg_listitem_shots.9.png" afterPath="$PROJECT_DIR$/Driibo/src/main/res/drawable-xhdpi/bg_listitem_shot.9.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Driibo/src/main/res/drawable-xhdpi/ic_eye.png" afterPath="$PROJECT_DIR$/Driibo/src/main/res/drawable-xhdpi/ic_view.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/src/main/res/drawable-xhdpi/bg.png" afterPath="$PROJECT_DIR$/Driibo/src/main/res/drawable-xhdpi/bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Driibo/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/DrawerAdapter.java" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/DrawerAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/fragment/DrawerFragment.java" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/fragment/DrawerFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/BitmapLruCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/util/TimeUtils.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/CacheUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/ImageCache.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/SimpleDiskLruCache.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/Android.mk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/Volley.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/custom_rules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/proguard-project.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/proguard.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/project.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/AuthFailureError.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/Cache.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/CacheDispatcher.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/DefaultRetryPolicy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/ExecutorDelivery.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/Network.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/NetworkDispatcher.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/NetworkError.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/NetworkResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/NoConnectionError.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/ParseError.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/Request.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/RequestQueue.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/Response.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/ResponseDelivery.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/RetryPolicy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/ServerError.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/TimeoutError.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/VolleyError.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/VolleyLog.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/AndroidAuthenticator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/Authenticator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/BasicNetwork.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/ByteArrayPool.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/ClearCacheRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/DiskBasedCache.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/HttpClientStack.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/HttpHeaderParser.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/HttpStack.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/HurlStack.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/ImageLoader.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/ImageRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/JsonArrayRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/JsonObjectRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/JsonRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/NetworkImageView.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/NoCache.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/PoolingByteArrayOutputStream.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/RequestFuture.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/StringRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/Volley.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/Android.mk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/project.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/res/raw/large_jpeg_1024_500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/CacheDispatcherTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/NetworkDispatcherTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/RequestQueueTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/RequestTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/ResponseDeliveryTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/mock/MockCache.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/mock/MockHttpClient.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/mock/MockHttpStack.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/mock/MockHttpURLConnection.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/mock/MockNetwork.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/mock/MockRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/mock/MockResponseDelivery.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/mock/TestRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/mock/WaitableQueue.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/toolbox/BasicNetworkTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/toolbox/ByteArrayPoolTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/toolbox/DiskBasedCacheTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/toolbox/HttpClientStackTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/toolbox/HttpHeaderParserTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/toolbox/HurlStackTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/toolbox/ImageRequestTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/toolbox/PoolingByteArrayOutputStreamTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/utils/CacheTestUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/src/com/android/volley/utils/ImmediateResponseDelivery.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Volley/tests/tests.iml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo-Driibo.iml" afterPath="$PROJECT_DIR$/Driibo-Driibo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/MainActivity.java" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/build/source/r/debug/com/refactech/driibo/R.java" afterPath="$PROJECT_DIR$/Driibo/build/source/r/debug/com/refactech/driibo/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/RequestManager.java" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/RequestManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/type/dribble/Shot.java" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/type/dribble/Shot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/ShotsAdapter.java" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/ShotsAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/dao/ShotsDataHelper.java" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/dao/ShotsDataHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/fragment/ShotsFragment.java" afterPath="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/fragment/ShotsFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/build.gradle" afterPath="$PROJECT_DIR$/Driibo/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/src/main/res/layout/fragment_content.xml" afterPath="$PROJECT_DIR$/Driibo/src/main/res/layout/fragment_content.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/src/main/res/layout/listitem_shot.xml" afterPath="$PROJECT_DIR$/Driibo/src/main/res/layout/listitem_shot.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/Driibo/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/Driibo/build/res/all/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/Driibo/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Driibo.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374155097030" ignored="false" />
+    <file path="/Dummy.txt" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374213319370" ignored="false" />
     <file path="/Player.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374133355165" ignored="false" />
     <file path="/Shot.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374149630481" ignored="false" />
-    <file path="/ShotsFragment.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374161418903" ignored="false" />
+    <file path="/ShotsFragment.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374207695877" ignored="false" />
     <file path="/activity_main.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374141001015" ignored="false" />
     <file path="/DrawerFragment.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374164388985" ignored="false" />
     <file path="/fragment_drawer.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374146787626" ignored="false" />
@@ -80,39 +130,40 @@
     <file path="/DriiboApp.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374131938763" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374130711648" ignored="false" />
     <file path="/DriiboRequestQueue.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374132587393" ignored="false" />
-    <file path="/RequestManager.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374166378932" ignored="false" />
+    <file path="/RequestManager.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374213423417" ignored="false" />
     <file path="/BaseFragment.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374132611377" ignored="false" />
     <file path="/DribbleRequest.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374133855044" ignored="false" />
     <file path="/BaseType.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374148884590" ignored="false" />
     <file path="/Dribbble.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374135070785" ignored="false" />
     <file path="/fragment.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374158543870" ignored="false" />
-    <file path="/a.dummy" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374161301490" ignored="false" />
+    <file path="/a.dummy" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374204711620" ignored="false" />
     <file path="/main_bg.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374138751679" ignored="false" />
     <file path="/colors.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374139558938" ignored="false" />
     <file path="/values.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374139617064" ignored="false" />
     <file path="/main.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374141343765" ignored="false" />
-    <file path="/strings.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374141317722" ignored="false" />
+    <file path="/strings.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374210442581" ignored="false" />
     <file path="/DrawerAdapter.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374146075022" ignored="false" />
     <file path="/listitem_drawer.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374146744716" ignored="false" />
     <file path="/CheckableFrameLayout.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374143306961" ignored="false" />
     <file path="/drawer_text_selector.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374143984123" ignored="false" />
     <file path="/listitem_drawer_selector.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374146362280" ignored="false" />
     <file path="/DataProvider.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374148298787" ignored="false" />
-    <file path="/ShotsDataHelper.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374150058947" ignored="false" />
+    <file path="/ShotsDataHelper.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374212008843" ignored="false" />
     <file path="/BaseDataHelper.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374150052685" ignored="false" />
     <file path="/SlowBaseAdapter.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374151057963" ignored="false" />
-    <file path="/ShotsAdapter.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374161392303" ignored="false" />
-    <file path="/listitem_shot.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374166747415" ignored="false" />
+    <file path="/ShotsAdapter.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374212456027" ignored="false" />
+    <file path="/listitem_shot.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374209911643" ignored="false" />
     <file path="/attrs.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374160695413" ignored="false" />
     <file path="$PROJECT_DIR$/../fuubo/Fuubo/src/me/imid/fuubo/ui/adapter/StatusViewHolder.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374154668690" ignored="false" />
     <file path="/StatusViewHolder.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374154666567" ignored="false" />
-    <file path="$PROJECT_DIR$/../volley/src/com/android/volley/toolbox/ImageLoader.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374159680803" ignored="false" />
-    <file path="/ImageLoader.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374166611383" ignored="false" />
+    <file path="$PROJECT_DIR$/../volley/src/com/android/volley/toolbox/ImageLoader.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374197557123" ignored="false" />
+    <file path="/ImageLoader.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374197004648" ignored="false" />
     <file path="/ImageCache.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374166286196" ignored="false" />
     <file path="$PROJECT_DIR$/../fuubo/Common/gen/me/imid/common/BuildConfig.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374157297231" ignored="false" />
     <file path="/ImageUtils.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374157680542" ignored="false" />
-    <file path="/fragment_content.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374163389481" ignored="false" />
+    <file path="/fragment_content.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374204384667" ignored="false" />
     <file path="/window_bg.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374163087258" ignored="false" />
+    <file path="/TimeUtils.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374211429451" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +178,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -163,7 +215,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -176,57 +227,16 @@
       <file leaf-file-name="ShotsAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/ShotsAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="38" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="59" column="53" selection-start="2104" selection-end="2104" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="listitem_shot.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Driibo/src/main/res/layout/listitem_shot.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+        <entry file="file://$PROJECT_DIR$/Driibo/build/res/all/debug/layout/listitem_shot.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="42" selection-start="629" selection-end="660" vertical-scroll-proportion="0.49689442">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GsonRequest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/GsonRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/RequestManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="53" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageCache.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/ImageCache.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="69" selection-start="1175" selection-end="1190" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Driibo/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="35" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0">
+            <state line="9" column="13" selection-start="344" selection-end="344" vertical-scroll-proportion="0.26418787">
               <folding />
             </state>
           </provider>
@@ -236,15 +246,6 @@
         <entry file="file://$PROJECT_DIR$/Driibo/src/main/res/values/attrs.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="6" column="11" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Driibo/src/main/res/values/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="53" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -268,22 +269,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/SimpleDiskLruCache.java" />
-        <option value="$PROJECT_DIR$/Driibo/src/main/res/values/attrs.xml" />
-        <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/fragment/ShotsFragment.java" />
-        <option value="$PROJECT_DIR$/Driibo/src/main/res/drawable/window_bg.xml" />
-        <option value="$PROJECT_DIR$/Driibo/build/res/all/debug/values/values.xml" />
-        <option value="$PROJECT_DIR$/Driibo/src/main/res/layout/fragment_content.xml" />
-        <option value="$PROJECT_DIR$/Driibo/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/fragment/DrawerFragment.java" />
+        <option value="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/ImageLoader.java" />
+        <option value="$PROJECT_DIR$/Volley/build.gradle" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/Driibo/build.gradle" />
-        <option value="$PROJECT_DIR$/Volley/build.gradle" />
         <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/ImageCache.java" />
-        <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/RequestManager.java" />
-        <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/ShotsAdapter.java" />
-        <option value="$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/ImageLoader.java" />
+        <option value="$PROJECT_DIR$/Driibo/src/main/res/layout/fragment_content.xml" />
+        <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/BitmapLruCache.java" />
+        <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/fragment/ShotsFragment.java" />
+        <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/util/TimeUtils.java" />
+        <option value="$PROJECT_DIR$/Driibo/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/Driibo/src/main/res/layout/listitem_shot.xml" />
+        <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/dao/ShotsDataHelper.java" />
+        <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/ShotsAdapter.java" />
+        <option value="$PROJECT_DIR$/Driibo/build/res/all/debug/layout/listitem_shot.xml" />
+        <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/RequestManager.java" />
       </list>
     </option>
   </component>
@@ -317,6 +318,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -349,20 +351,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Volley" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Driibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Driibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Driibo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -386,6 +374,62 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -416,6 +460,150 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adapter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -467,27 +655,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Driibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="File.Encoding" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Volley" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Driibo/libs/volley.jar!/" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="040ABFQHCMHQ" />
     <property name="DEBUGGABLE_DEVICE" value="040ABFQHCMHQ" />
@@ -669,22 +890,20 @@
       <workItem from="1374122242969" duration="62000" />
       <workItem from="1374122370684" duration="20865000" />
       <workItem from="1374145602457" duration="20818000" />
+      <workItem from="1374196774111" duration="14829000" />
+      <workItem from="1374213318623" duration="169000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41745000" />
+    <option name="totallyTimeSpent" value="56743000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6708229" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6708229" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6708229" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -696,12 +915,16 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24928162" sideWeight="0.6708229" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6708229" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32917705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892396" sideWeight="0.67206985" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32793018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6708229" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6708229" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6708229" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6708229" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -766,55 +989,85 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Driibo/src/main/res/values/styles.xml">
+    <entry file="jar://$PROJECT_DIR$/Driibo/libs/volley.jar!/com/android/volley/toolbox/ImageLoader.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="53" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="13" selection-start="169" selection-end="169" vertical-scroll-proportion="-0.6659619" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/fragment/DrawerFragment.java">
+    <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/BitmapLruCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="26" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.64705884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/fragment/ShotsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="63" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.1764706">
+        <state line="33" column="0" selection-start="729" selection-end="729" vertical-scroll-proportion="0.853229">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2031#2356#0" expanded="true" />
-            <element signature="e#2337#2338#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Driibo/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/GsonRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="35" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0">
+        <state line="4" column="0" selection-start="109" selection-end="109" vertical-scroll-proportion="0.11741683">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Volley/build.gradle">
+    <entry file="file://$USER_HOME$/bin/android-sdk-macosx/sources/android-17/android/text/format/DateFormat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="641" selection-end="641" vertical-scroll-proportion="0.8235294">
+        <state line="511" column="31" selection-start="17612" selection-end="17612" vertical-scroll-proportion="-2.1624267">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Driibo/build.gradle">
+    <entry file="file://$PROJECT_DIR$/Driibo/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="1" selection-start="398" selection-end="398" vertical-scroll-proportion="0.5588235">
+        <state line="9" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="0.26418787">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
+    <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/util/TimeUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="213" selection-end="213" vertical-scroll-proportion="0.3522505">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/dao/ShotsDataHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="0" selection-start="2481" selection-end="2481" vertical-scroll-proportion="1.8199608">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Driibo/src/main/res/layout/listitem_shot.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="35" selection-start="735" selection-end="735" vertical-scroll-proportion="0.25619835">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Driibo/src/main/res/layout/fragment_content.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="45" selection-start="238" selection-end="238" vertical-scroll-proportion="0.15495868">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/bin/android-sdk-macosx/platforms/android-17/android.jar!/android/graphics/drawable/ColorDrawable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="11" selection-start="238" selection-end="238" vertical-scroll-proportion="0.18072289" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/fragment/ShotsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="32" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.6164383">
           <folding />
         </state>
       </provider>
@@ -826,65 +1079,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/GsonRequest.java">
+    <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/ShotsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/NetworkImageView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="27" selection-start="2651" selection-end="2662" vertical-scroll-proportion="0.33199194">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/SimpleDiskLruCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="494" selection-end="494" vertical-scroll-proportion="-1.38833">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/ImageCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="69" selection-start="1175" selection-end="1190" vertical-scroll-proportion="0.0">
+        <state line="59" column="53" selection-start="2104" selection-end="2104" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/RequestManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="53" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0">
+        <state line="72" column="64" selection-start="2957" selection-end="2957" vertical-scroll-proportion="0.54990214">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Volley/src/com/android/volley/toolbox/ImageLoader.java">
+    <entry file="file://$PROJECT_DIR$/Driibo/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="50" selection-start="5287" selection-end="5287" vertical-scroll-proportion="0.29411766">
+        <state line="20" column="35" selection-start="816" selection-end="816" vertical-scroll-proportion="0.2661448">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/ShotsAdapter.java">
+    <entry file="file://$PROJECT_DIR$/Driibo/build/res/all/debug/layout/listitem_shot.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="38" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Driibo/src/main/res/layout/listitem_shot.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="629" selection-end="660" vertical-scroll-proportion="0.49689442">
+        <state line="9" column="13" selection-start="344" selection-end="344" vertical-scroll-proportion="0.26418787">
           <folding />
         </state>
       </provider>
@@ -941,7 +1159,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Driibo-Driibo</last-edited>
+          <last-edited>Driibo</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -51,8 +51,13 @@ public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderC
         parseArgument();
         mDataHelper = new ShotsDataHelper(AppData.getContext(), mCategory);
         mAdapter = new ShotsAdapter(getActivity());
+        View header = new View(getActivity());
+        View footer = new View(getActivity());
+        mLisetView.addHeaderView(header);
+        mLisetView.addFooterView(footer);
         mLisetView.setAdapter(mAdapter);
 
+        mDataHelper.deleteAll();
         executeRequest(new GsonRequest<Shot.ShotsRequestData>(String.format(DribbbleApi.SHOTS_LIST,
                 mCategory.name()), Shot.ShotsRequestData.class, null,
                 new Response.Listener<Shot.ShotsRequestData>() {
