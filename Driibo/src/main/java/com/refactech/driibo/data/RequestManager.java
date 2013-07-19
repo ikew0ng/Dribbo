@@ -75,7 +75,7 @@ public class RequestManager {
                     } else {
                         view.setImageBitmap(response.getBitmap());
                     }
-                } else if (defaultImageDrawable != null) { 
+                } else if (defaultImageDrawable != null) {
                     view.setImageDrawable(defaultImageDrawable);
                 }
             }

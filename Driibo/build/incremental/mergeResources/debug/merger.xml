@@ -165,10 +165,10 @@
                     name="ic_like"
                     format="reference" />
                 <attr
-                    name="ic_view"
+                    name="ic_comment"
                     format="reference" />
                 <attr
-                    name="ic_comment"
+                    name="ic_view"
                     format="reference" />
                 <attr
                     name="bg_listitem_shot"
@@ -179,9 +179,9 @@
                 qualifiers="" >
                 <color name="dribbble_graphite" >#333333
                 </color>
-                <color name="dribbble_pink" >#ea4c89
-                </color>
                 <color name="dribbble_green" >#8aba56
+                </color>
+                <color name="dribbble_pink" >#ea4c89
                 </color>
             </file>
             <file
@@ -197,9 +197,9 @@
                 qualifiers="" >
                 <string name="action_settings" >Settings
                 </string>
-                <string name="app_name" >Driibo
-                </string>
                 <string name="action_share" >Share
+                </string>
+                <string name="app_name" >Driibo
                 </string>
                 <string name="action_refresh" >Refresh
                 </string>
@@ -216,23 +216,42 @@
 
                 <style
                     name="ActionbarStyle"
-                    parent="android:Widget.Holo.Light.ActionBar" >
+                    parent="android:Widget.Holo.ActionBar" >
                     <item name="android:background">
 @drawable/actionbar_bg
                     </item>
-                    <item name="android:actionOverflowButtonStyle">
+                    <item name="android:titleTextStyle">
+@style/ActionbarTitleTextStyle
+                    </item>
+                </style>
+
+                <style
+                    name="ActionbarTitleTextStyle"
+                    parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title" >
+                    <item name="android:textColor">
+@android:color/white
+                    </item>
+                </style>
+
+                <style
+                    name="ActionbarOverFlowStyle"
+                    parent="@android:style/Widget.Holo.ActionButton.Overflow" >
+                    <item name="android:src">
 @drawable/ic_action_overflow
                     </item>
                 </style>
 
                 <style
                     name="AppTheme"
-                    parent="android:Theme.Holo.Light" >
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
                     <item name="android:windowBackground">
 @drawable/main_bg
                     </item>
                     <item name="android:actionBarStyle">
 @style/ActionbarStyle
+                    </item>
+                    <item name="android:actionOverflowButtonStyle">
+@style/ActionbarOverFlowStyle
                     </item>
                     <item name="bg_listitem_shot">
 @drawable/listitem_shot_selector
@@ -247,6 +266,42 @@
 @drawable/ic_comment
                     </item>
                 </style>
+            </file>
+            <file
+                name="activity_preference"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/layout/activity_preference.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="preference"
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/xml/preference.xml"
+                qualifiers=""
+                type="xml" />
+            <file
+                path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/values/preference_strings.xml"
+                qualifiers="" >
+                <string name="pref_title_coder" >\@RefacTech碎星
+                </string>
+                <string name="pref_key_version" >pref_key_version
+                </string>
+                <string name="pref_key_designer" >pref_key_designer
+                </string>
+                <string name="pref_key_coder" >pref_key_coder
+                </string>
+                <string name="pref_title_github" >Github
+                </string>
+                <string name="pref_title_from" >Powered by RefacTech
+                </string>
+                <string name="pref_summary_designer" >Designer
+                </string>
+                <string name="pref_summary_coder" >Coder
+                </string>
+                <string name="pref_key_github" >pref_key_github
+                </string>
+                <string name="pref_title_designer" >\@Kenefe_Li
+                </string>
+                <string name="pref_key_from" >pref_key_from
+                </string>
             </file>
         </source>
         <source path="/Users/Issac/workspace/Driibo/Driibo/build/res/rs/debug" />

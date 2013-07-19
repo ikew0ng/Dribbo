@@ -18,7 +18,7 @@ tasks.withType(Compile) {
     options.encoding = "UTF-8"
 }
 
-String VERSION_NAME = "1.0.0"
+String VERSION_NAME = "v1.0.0"
 int VERSION_CODE = 1
 
 android {
@@ -27,7 +27,7 @@ android {
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 16
+        targetSdkVersion 14
         versionCode VERSION_CODE
         versionName VERSION_NAME
     }

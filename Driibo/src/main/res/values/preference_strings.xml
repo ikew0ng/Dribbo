@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_key_version">pref_key_version</string>
+    <string name="pref_key_from">pref_key_from</string>
+    <string name="pref_title_from">Powered by RefacTech</string>
+    <string name="pref_key_coder">pref_key_coder</string>
+    <string name="pref_summary_coder">Coder</string>
+    <string name="pref_title_coder">\@RefacTech碎星</string>
+    <string name="pref_key_designer">pref_key_designer</string>
+    <string name="pref_title_designer">\@Kenefe_Li</string>
+    <string name="pref_summary_designer">Designer</string>
+    <string name="pref_key_github">pref_key_github</string>
+    <string name="pref_title_github">Github</string>
+</resources>

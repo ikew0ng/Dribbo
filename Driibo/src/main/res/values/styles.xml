@@ -1,18 +1,26 @@
 <resources>
     <!-- Application theme. -->
-    <style name="AppTheme" parent="android:Theme.Holo.Light">
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <item name="android:windowBackground">@drawable/main_bg</item>
         <item name="android:actionBarStyle">@style/ActionbarStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionbarOverFlowStyle</item>
+
         <item name="bg_listitem_shot">@drawable/listitem_shot_selector</item>
         <item name="ic_view">@drawable/ic_view</item>
         <item name="ic_like">@drawable/ic_like</item>
         <item name="ic_comment">@drawable/ic_comment</item>
     </style>
 
-    <style name="ActionbarStyle" parent="android:Widget.Holo.Light.ActionBar">
+    <style name="ActionbarStyle" parent="android:Widget.Holo.ActionBar">
         <item name="android:background">@drawable/actionbar_bg</item>
-        <item name="android:actionOverflowButtonStyle">@drawable/ic_action_overflow</item>
+        <item name="android:titleTextStyle">@style/ActionbarTitleTextStyle</item>
     </style>
 
+    <style name="ActionbarTitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
 
+    <style name="ActionbarOverFlowStyle" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_action_overflow</item>
+    </style>
 </resources>

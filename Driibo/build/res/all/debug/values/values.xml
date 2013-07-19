@@ -19,16 +19,36 @@
     <string name="app_name">Driibo</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="drawer_open">Open navigation drawer</string>
+    <string name="pref_key_coder">pref_key_coder</string>
+    <string name="pref_key_designer">pref_key_designer</string>
+    <string name="pref_key_from">pref_key_from</string>
+    <string name="pref_key_github">pref_key_github</string>
+    <string name="pref_key_version">pref_key_version</string>
+    <string name="pref_summary_coder">Coder</string>
+    <string name="pref_summary_designer">Designer</string>
+    <string name="pref_title_coder">\@RefacTech碎星</string>
+    <string name="pref_title_designer">\@Kenefe_Li</string>
+    <string name="pref_title_from">Powered by RefacTech</string>
+    <string name="pref_title_github">Github</string>
     <string name="refresh_list_failed">Failed to refresh list.</string>
 
-    <style name="ActionbarStyle" parent="android:Widget.Holo.Light.ActionBar">
-        <item name="android:background">@drawable/actionbar_bg</item>
-        <item name="android:actionOverflowButtonStyle">@drawable/ic_action_overflow</item>
+    <style name="ActionbarOverFlowStyle" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_action_overflow</item>
     </style>
 
-    <style name="AppTheme" parent="android:Theme.Holo.Light">
+    <style name="ActionbarStyle" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/actionbar_bg</item>
+        <item name="android:titleTextStyle">@style/ActionbarTitleTextStyle</item>
+    </style>
+
+    <style name="ActionbarTitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <item name="android:windowBackground">@drawable/main_bg</item>
         <item name="android:actionBarStyle">@style/ActionbarStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionbarOverFlowStyle</item>
         <item name="bg_listitem_shot">@drawable/listitem_shot_selector</item>
         <item name="ic_view">@drawable/ic_view</item>
         <item name="ic_like">@drawable/ic_like</item>

@@ -7,6 +7,7 @@ import com.refactech.driibo.ui.fragment.DrawerFragment;
 import com.refactech.driibo.ui.fragment.ShotsFragment;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -101,6 +102,7 @@ public class MainActivity extends FragmentActivity {
                 mContentFragment.loadFirstPage();
                 return true;
             case R.id.action_settings:
+                startActivity(new Intent(this, PreferenceActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
