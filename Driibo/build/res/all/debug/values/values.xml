@@ -19,6 +19,7 @@
     <string name="app_name">Driibo</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="drawer_open">Open navigation drawer</string>
+    <string name="image_not_downloaded">Image not downloaded</string>
     <string name="pref_key_coder">pref_key_coder</string>
     <string name="pref_key_designer">pref_key_designer</string>
     <string name="pref_key_from">pref_key_from</string>
@@ -45,7 +46,7 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
         <item name="android:windowBackground">@drawable/main_bg</item>
         <item name="android:actionBarStyle">@style/ActionbarStyle</item>
         <item name="android:actionOverflowButtonStyle">@style/ActionbarOverFlowStyle</item>

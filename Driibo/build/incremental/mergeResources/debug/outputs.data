@@ -1,7 +1,7 @@
 # incremental data. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
-1374229009000 3188 a7b3e37628ffddb128f286cc58de0ebde9b9f52d /Users/Issac/workspace/Driibo/Driibo/build/res/all/debug/layout/listitem_shot.xml
+1374240372000 3188 28ef133b7272c18183b8b80e072b8344170db15c /Users/Issac/workspace/Driibo/Driibo/build/res/all/debug/layout/listitem_shot.xml
 1374229009000 3760 9d45e7de00dac30e9738dc369dece2835bf9677e /Users/Issac/workspace/Driibo/Driibo/build/res/all/debug/drawable-mdpi/ic_launcher.png
 1374229009000 725 8888c696e50969a7d5a74064c2e0e3f8c1ec9b72 /Users/Issac/workspace/Driibo/Driibo/build/res/all/debug/layout/fragment_content.xml
 1374229009000 7783 03172612ec7d8d2cc6295a185410c3e6501771aa /Users/Issac/workspace/Driibo/Driibo/build/res/all/debug/drawable-hdpi/ic_launcher.png
@@ -19,7 +19,7 @@
 1374229009000 323 25e3f3010539cbc46156b20a2d16829a761d49f6 /Users/Issac/workspace/Driibo/Driibo/build/res/all/debug/menu/context_menu.xml
 1374229008000 154 df659b4ed00cf0b37a903f049f1d6827f5d9fbab /Users/Issac/workspace/Driibo/Driibo/build/res/all/debug/drawable-xhdpi/actionbar_bg.9.png
 1374229008000 195 1c5077b0c3b821c024b481c164bce56205ee9fd4 /Users/Issac/workspace/Driibo/Driibo/build/res/all/debug/drawable-xhdpi/drawer_shadow.9.png
-1374239645000 2765 375c2d175d6e117ecd0cdf1ad9ce3a12360d2327 /Users/Issac/workspace/Driibo/Driibo/build/res/all/debug/values/values.xml
+1374241731000 2821 4718d247c86fbe3bac405f683726b9bd4d0a1543 /Users/Issac/workspace/Driibo/Driibo/build/res/all/debug/values/values.xml
 1374229009000 682 24bc6970f3103eb58a4cce70a3f0e31449664005 /Users/Issac/workspace/Driibo/Driibo/build/res/all/debug/drawable-xhdpi/bg_listitem_shot_selected.9.png
 1374229009000 3407 5c41bc00ae62dd4263d656627ab37071af5f90d1 /Users/Issac/workspace/Driibo/Driibo/build/res/all/debug/drawable-xhdpi/ic_refresh.png
 1374229009000 3042 930f6538e1a3f33c22391cb6194cb332cc66b5a9 /Users/Issac/workspace/Driibo/Driibo/build/res/all/debug/drawable-xhdpi/ic_comment.png

@@ -96,18 +96,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int app_name=0x7f070003;
         public static final int drawer_close=0x7f070004;
         public static final int drawer_open=0x7f070005;
-        public static final int pref_key_coder=0x7f070006;
-        public static final int pref_key_designer=0x7f070007;
-        public static final int pref_key_from=0x7f070008;
-        public static final int pref_key_github=0x7f070009;
-        public static final int pref_key_version=0x7f07000a;
-        public static final int pref_summary_coder=0x7f07000b;
-        public static final int pref_summary_designer=0x7f07000c;
-        public static final int pref_title_coder=0x7f07000d;
-        public static final int pref_title_designer=0x7f07000e;
-        public static final int pref_title_from=0x7f07000f;
-        public static final int pref_title_github=0x7f070010;
-        public static final int refresh_list_failed=0x7f070011;
+        public static final int image_not_downloaded=0x7f070006;
+        public static final int pref_key_coder=0x7f070007;
+        public static final int pref_key_designer=0x7f070008;
+        public static final int pref_key_from=0x7f070009;
+        public static final int pref_key_github=0x7f07000a;
+        public static final int pref_key_version=0x7f07000b;
+        public static final int pref_summary_coder=0x7f07000c;
+        public static final int pref_summary_designer=0x7f07000d;
+        public static final int pref_title_coder=0x7f07000e;
+        public static final int pref_title_designer=0x7f07000f;
+        public static final int pref_title_from=0x7f070010;
+        public static final int pref_title_github=0x7f070011;
+        public static final int refresh_list_failed=0x7f070012;
     }
     public static final class style {
         public static final int ActionbarOverFlowStyle=0x7f080000;

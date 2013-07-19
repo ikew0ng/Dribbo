@@ -1,6 +1,6 @@
 <resources>
     <!-- Application theme. -->
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
         <item name="android:windowBackground">@drawable/main_bg</item>
         <item name="android:actionBarStyle">@style/ActionbarStyle</item>
         <item name="android:actionOverflowButtonStyle">@style/ActionbarOverFlowStyle</item>

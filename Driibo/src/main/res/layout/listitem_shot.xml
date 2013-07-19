@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="250dip"
         android:background="#c9c9c9"
-        android:layout_marginBottom="8dip"
+        android:layout_marginBottom="4dip"
         android:scaleType="centerCrop"/>
 
     <ImageView

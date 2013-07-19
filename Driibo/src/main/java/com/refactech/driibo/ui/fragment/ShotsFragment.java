@@ -17,6 +17,7 @@ import com.refactech.driibo.vendor.DribbbleApi;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.LoaderManager;
@@ -123,25 +124,78 @@ public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderC
                 }
             }
         });
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Shot shot = mAdapter.getItem(position - mListView.getHeaderViewsCount());
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(shot.getUrl()));
+                startActivity(intent);
+            }
+        });
+
         mListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                if (mActionMode != null) {
-                    return false;
-                }
-                mActionMode = getActivity().startActionMode(mActionModeCallback);
-                mListView.setItemChecked(position, true);
                 Shot shot = mAdapter.getItem(position - mListView.getHeaderViewsCount());
-                mActionMode.setTitle(getString(R.string.action_share));
-                mActionMode.setSubtitle(shot.getTitle());
-                Intent sendIntent = new Intent();
-                sendIntent.setAction(Intent.ACTION_SEND);
-                sendIntent.putExtra(Intent.EXTRA_TEXT, shot.getTitle());
-                sendIntent.setType("text/plain");
-                setShareIntent(sendIntent);
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(shot.getImage_url()));
+                startActivity(intent);
                 return true;
             }
         });
+
+        // mListView.setOnItemLongClickListener(new
+        // AdapterView.OnItemLongClickListener() {
+        // @Override
+        // public boolean onItemLongClick(AdapterView<?> parent, View view, int
+        // position, long id) {
+        // Shot shot = mAdapter.getItem(position -
+        // mListView.getHeaderViewsCount());
+        // File cachedImage = RequestManager.getCachedImageFile(shot.getUrl());
+        // if (mActionMode != null) {
+        // return false;
+        // }
+        // ImageView image = (ImageView) view.findViewById(R.id.image);
+        // Drawable drawable = image.getDrawable();
+        // if (!(drawable instanceof TransitionDrawable)){
+        // return false;
+        // }
+        // Bitmap imageBitmap = ((BitmapDrawable) ((TransitionDrawable)
+        // drawable)
+        // .getDrawable(1)).getBitmap();
+        // File file = null;
+        // try {
+        // String fileName = "share";
+        // OutputStream outputStream =
+        // AppData.getContext().openFileOutput("share",
+        // Context.MODE_WORLD_WRITEABLE);
+        // imageBitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream);
+        // file = AppData.getContext().getFileStreamPath(fileName);
+        // Toast.makeText(AppData.getContext(), file.getAbsolutePath(),
+        // Toast.LENGTH_SHORT)
+        // .show();
+        // outputStream.flush();
+        // outputStream.close();
+        // } catch (FileNotFoundException e) {
+        // e.printStackTrace();
+        // } catch (IOException e) {
+        // e.printStackTrace();
+        // }
+        // mActionMode = getActivity().startActionMode(mActionModeCallback);
+        // mListView.setItemChecked(position, true);
+        //
+        // mActionMode.setTitle(getString(R.string.action_share));
+        // mActionMode.setSubtitle(shot.getTitle());
+        // Intent shareIntent = new Intent();
+        // shareIntent.setAction(Intent.ACTION_SEND);
+        // shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file));
+        // shareIntent.setType("image/jpeg");
+        // setShareIntent(shareIntent);
+        // return true;
+        // }
+        // });
         return contentView;
     }
 

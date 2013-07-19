@@ -209,6 +209,8 @@
                 </string>
                 <string name="refresh_list_failed" >Failed to refresh list.
                 </string>
+                <string name="image_not_downloaded" >Image not downloaded
+                </string>
             </file>
             <file
                 path="/Users/Issac/workspace/Driibo/Driibo/src/main/res/values/styles.xml"
@@ -243,7 +245,7 @@
 
                 <style
                     name="AppTheme"
-                    parent="android:Theme.Holo.Light.DarkActionBar" >
+                    parent="android:Theme.Holo.Light" >
                     <item name="android:windowBackground">
 @drawable/main_bg
                     </item>

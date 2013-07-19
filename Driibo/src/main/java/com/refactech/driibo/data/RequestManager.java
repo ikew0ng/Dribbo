@@ -1,12 +1,16 @@
 
 package com.refactech.driibo.data;
 
+import com.android.volley.Cache;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.BasicNetwork;
+import com.android.volley.toolbox.DiskBasedCache;
+import com.android.volley.toolbox.HurlStack;
 import com.android.volley.toolbox.ImageLoader;
-import com.android.volley.toolbox.Volley;
 import com.refactech.driibo.AppData;
+import com.refactech.driibo.util.CacheUtils;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -15,11 +19,13 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.TransitionDrawable;
 import android.widget.ImageView;
 
+import java.io.File;
+
 /**
  * Created by Issac on 7/18/13.
  */
 public class RequestManager {
-    public static RequestQueue mRequestQueue = Volley.newRequestQueue(AppData.getContext());
+    public static RequestQueue mRequestQueue = newRequestQueue();
 
     // 取运行内存阈值的1/3作为图片缓存
     private static final int MEM_CACHE_SIZE = 1024 * 1024 * ((ActivityManager) AppData.getContext()
@@ -27,6 +33,19 @@ public class RequestManager {
 
     private static ImageLoader mImageLoader = new ImageLoader(mRequestQueue, new BitmapLruCache(
             MEM_CACHE_SIZE));
+
+    private static DiskBasedCache mDiskCache = (DiskBasedCache) mRequestQueue.getCache();
+
+    private static Cache openCache() {
+        return new DiskBasedCache(CacheUtils.getExternalCacheDir(AppData.getContext()),
+                10 * 1024 * 1024);
+    }
+
+    private static RequestQueue newRequestQueue() {
+        RequestQueue requestQueue = new RequestQueue(openCache(), new BasicNetwork(new HurlStack()));
+        requestQueue.start();
+        return requestQueue;
+    }
 
     public static void addRequest(Request request, Object tag) {
         if (tag != null) {
@@ -37,6 +56,10 @@ public class RequestManager {
 
     public static void cancelAll(Object tag) {
         mRequestQueue.cancelAll(tag);
+    }
+
+    public static File getCachedImageFile(String url) {
+        return mDiskCache.getFileForKey(url);
     }
 
     public static ImageLoader.ImageContainer loadImage(String requestUrl,
