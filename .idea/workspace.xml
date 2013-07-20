@@ -17,71 +17,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9a209b6-a6c5-4084-b1ac-b110292fab12" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo-Driibo.iml" afterPath="$PROJECT_DIR$/Driibo-Driibo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo.iml" afterPath="$PROJECT_DIR$/Driibo.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/build.gradle" afterPath="$PROJECT_DIR$/Driibo/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Driibo.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374290442567" ignored="false" />
-    <file path="/Player.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374133355165" ignored="false" />
-    <file path="/Shot.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374149630481" ignored="false" />
-    <file path="/ShotsFragment.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374249953941" ignored="false" />
-    <file path="/activity_main.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374141001015" ignored="false" />
-    <file path="/DrawerFragment.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374164388985" ignored="false" />
-    <file path="/fragment_drawer.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374146787626" ignored="false" />
-    <file path="/MainActivity.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374236570186" ignored="false" />
-    <file path="/styles.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374237942659" ignored="false" />
-    <file path="/DriiboApp.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374131938763" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374237034153" ignored="false" />
-    <file path="/DriiboRequestQueue.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374132587393" ignored="false" />
-    <file path="/RequestManager.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374244274695" ignored="false" />
-    <file path="/BaseFragment.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374132611377" ignored="false" />
-    <file path="/DribbleRequest.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374133855044" ignored="false" />
-    <file path="/BaseType.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374148884590" ignored="false" />
-    <file path="/Dribbble.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374135070785" ignored="false" />
-    <file path="/fragment.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374213744395" ignored="false" />
-    <file path="/a.dummy" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374220983161" ignored="false" />
-    <file path="/main_bg.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374138751679" ignored="false" />
-    <file path="/colors.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374139558938" ignored="false" />
-    <file path="/values.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374139617064" ignored="false" />
-    <file path="/main.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374141343765" ignored="false" />
-    <file path="/strings.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374241682428" ignored="false" />
-    <file path="/DrawerAdapter.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374146075022" ignored="false" />
-    <file path="/listitem_drawer.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374213632286" ignored="false" />
-    <file path="/CheckableFrameLayout.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374143306961" ignored="false" />
-    <file path="/drawer_text_selector.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374143984123" ignored="false" />
-    <file path="/listitem_drawer_selector.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374146362280" ignored="false" />
-    <file path="/DataProvider.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374148298787" ignored="false" />
-    <file path="/ShotsDataHelper.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374212008843" ignored="false" />
-    <file path="/BaseDataHelper.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374150052685" ignored="false" />
-    <file path="/SlowBaseAdapter.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374151057963" ignored="false" />
-    <file path="/ShotsAdapter.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374226444982" ignored="false" />
-    <file path="/listitem_shot.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374240175437" ignored="false" />
-    <file path="/attrs.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374160695413" ignored="false" />
-    <file path="$PROJECT_DIR$/../fuubo/Fuubo/src/me/imid/fuubo/ui/adapter/StatusViewHolder.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374154668690" ignored="false" />
-    <file path="/StatusViewHolder.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374154666567" ignored="false" />
-    <file path="$PROJECT_DIR$/../volley/src/com/android/volley/toolbox/ImageLoader.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374246495540" ignored="false" />
-    <file path="/ImageLoader.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374197004648" ignored="false" />
-    <file path="/ImageCache.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374166286196" ignored="false" />
-    <file path="$PROJECT_DIR$/../fuubo/Common/gen/me/imid/common/BuildConfig.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374157297231" ignored="false" />
-    <file path="/ImageUtils.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374157680542" ignored="false" />
-    <file path="/fragment_content.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374224040154" ignored="false" />
-    <file path="/window_bg.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374163087258" ignored="false" />
-    <file path="/TimeUtils.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374211429451" ignored="false" />
-    <file path="$PROJECT_DIR$/../fuubo/Common/src/me/imid/common/utils/listview/ListViewUtils.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374216642552" ignored="false" />
-    <file path="/context_menu.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374218767323" ignored="false" />
-    <file path="$PROJECT_DIR$/../fuubo/Fuubo/res/layout/fragment_timeline.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374221182820" ignored="false" />
-    <file path="/listitem_shot_selector.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374225636946" ignored="false" />
-    <file path="$PROJECT_DIR$/../fuubo/Fuubo/build.gradle" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374226833540" ignored="false" />
-    <file path="/build.gradle" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374227115513" ignored="false" />
-    <file path="/preference_strings.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374239581855" ignored="false" />
-    <file path="/PreferenceFragment.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374238504256" ignored="false" />
-    <file path="/PreferenceActivity.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374238226067" ignored="false" />
-    <file path="/activity_preference.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374232407487" ignored="false" />
-    <file path="/preference.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374239601238" ignored="false" />
-    <file path="$PROJECT_DIR$/../volley/src/com/android/volley/CacheDispatcher.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374246248394" ignored="false" />
-    <file path="/CacheDispatcher.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374246247052" ignored="false" />
-    <file path="/BrowserActivity.java" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374249487828" ignored="false" />
-    <file path="/activity_browser.xml" changelist="e9a209b6-a6c5-4084-b1ac-b110292fab12" time="1374249472711" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +40,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -132,7 +77,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -163,12 +107,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Driibo/src/main/res/layout/activity_preference.xml" />
         <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/MainActivity.java" />
         <option value="$PROJECT_DIR$/Driibo/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/PreferenceActivity.java" />
         <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/fragment/PreferenceFragment.java" />
-        <option value="$PROJECT_DIR$/Driibo/build.gradle" />
         <option value="$PROJECT_DIR$/Driibo/src/main/res/values/preference_strings.xml" />
         <option value="$PROJECT_DIR$/Driibo/src/main/res/xml/preference.xml" />
         <option value="$PROJECT_DIR$/Driibo/src/main/res/layout/listitem_shot.xml" />
@@ -179,6 +121,8 @@
         <option value="$PROJECT_DIR$/Driibo/src/main/res/layout/activity_browser.xml" />
         <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/BrowserActivity.java" />
         <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/fragment/ShotsFragment.java" />
+        <option value="$PROJECT_DIR$/Driibo/build.gradle" />
+        <option value="$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/dao/DataProvider.java" />
       </list>
     </option>
   </component>
@@ -212,7 +156,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -740,6 +683,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -768,7 +712,7 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="options.lastSelected" value="File.Encoding" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="040ABFQHCMHQ" />
@@ -981,32 +925,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.67206985" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.67206985" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892396" sideWeight="0.67206985" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892396" sideWeight="0.6708229" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711443" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.67206985" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.67206985" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6708229" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32668328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6708229" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6708229" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32917705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32668328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1071,35 +1016,19 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Driibo/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="59" selection-start="103" selection-end="103" vertical-scroll-proportion="0.058708414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/PreferenceActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="50" selection-start="776" selection-end="776" vertical-scroll-proportion="0.5870842">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Driibo/src/main/res/layout/listitem_shot.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="38" selection-start="521" selection-end="521" vertical-scroll-proportion="0.37190083">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="38" selection-start="521" selection-end="521" vertical-scroll-proportion="0.37190083" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/fragment/PreferenceFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="46" selection-start="501" selection-end="501" vertical-scroll-proportion="0.41291586">
+        <state line="18" column="46" selection-start="501" selection-end="501" vertical-scroll-proportion="0.41291586" vertical-offset="0" max-vertical-offset="0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#581#617#0" expanded="true" />
@@ -1109,14 +1038,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Driibo/src/main/res/values/preference_strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="35" selection-start="665" selection-end="682" vertical-scroll-proportion="0.3522505">
+        <state line="12" column="35" selection-start="665" selection-end="682" vertical-scroll-proportion="0.3522505" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/util/CacheUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="5" selection-start="901" selection-end="901" vertical-scroll-proportion="0.76516634">
+        <state line="30" column="5" selection-start="901" selection-end="901" vertical-scroll-proportion="0.76516634" vertical-offset="0" max-vertical-offset="0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1125,24 +1054,22 @@
     </entry>
     <entry file="file://$USER_HOME$/bin/android-sdk-macosx/sources/android-17/android/content/Context.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="28" selection-start="3819" selection-end="3819" vertical-scroll-proportion="0.6849315">
-          <folding />
-        </state>
+        <state line="94" column="28" selection-start="3819" selection-end="3819" vertical-scroll-proportion="0.6849315" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Driibo/src/main/res/layout/activity_browser.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="33" selection-start="396" selection-end="396" vertical-scroll-proportion="0.30991736">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="33" selection-start="396" selection-end="396" vertical-scroll-proportion="0.30991736" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/BrowserActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="41" selection-start="367" selection-end="374" vertical-scroll-proportion="0.4403131">
+        <state line="15" column="41" selection-start="367" selection-end="374" vertical-scroll-proportion="0.4403131" vertical-offset="0" max-vertical-offset="0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1151,26 +1078,26 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/Driibo/libs/volley.jar!/com/android/volley/toolbox/ImageLoader.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="169" selection-end="169" vertical-scroll-proportion="0.15856236" />
+        <state line="6" column="13" selection-start="169" selection-end="169" vertical-scroll-proportion="0.15856236" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/RequestManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="44" selection-start="2540" selection-end="2540" vertical-scroll-proportion="0.21526419">
+        <state line="74" column="44" selection-start="2540" selection-end="2540" vertical-scroll-proportion="0.21526419" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/data/GsonRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="16" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.28479382">
+        <state line="33" column="16" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.28479382" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/fragment/ShotsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="235" column="34" selection-start="8414" selection-end="8414" vertical-scroll-proportion="0.15979381">
+        <state line="235" column="34" selection-start="8414" selection-end="8414" vertical-scroll-proportion="0.15979381" vertical-offset="0" max-vertical-offset="0">
           <folding>
             <element signature="e#8572#9701#0" expanded="true" />
             <element signature="e#9682#9683#0" expanded="true" />
@@ -1180,21 +1107,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/adapter/ShotsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="40" selection-start="2564" selection-end="2564" vertical-scroll-proportion="0.019329896">
+        <state line="73" column="40" selection-start="2564" selection-end="2564" vertical-scroll-proportion="0.019329896" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Driibo/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="38" selection-start="265" selection-end="285" vertical-scroll-proportion="0.13530928">
+        <state line="7" column="38" selection-start="265" selection-end="285" vertical-scroll-proportion="0.13530928" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/ui/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="51" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.019329896">
+        <state line="48" column="51" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.019329896" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Driibo/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="18" selection-start="111" selection-end="111" vertical-scroll-proportion="0.07751938" vertical-offset="0" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Driibo/src/main/java/com/refactech/driibo/dao/DataProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="26" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.44573644" vertical-offset="135" max-vertical-offset="3120">
           <folding />
         </state>
       </provider>

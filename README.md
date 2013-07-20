@@ -3,6 +3,7 @@ Dribbo
 
 设计简约的Dribbble客户端，提供了全面的浏览功能，让你时刻紧跟潮流！
 
+![Driibo](https://raw.github.com/IssacWang/Dribbo/master/image/DSC02463.jpg)
 
 练习之作，基于[Volley](https://android.googlesource.com/platform/frameworks/volley)快速开发。
 
