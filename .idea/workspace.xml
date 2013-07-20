@@ -17,14 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9a209b6-a6c5-4084-b1ac-b110292fab12" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/build/res/all/debug/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/Driibo/build/res/all/debug/drawable-hdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/build/res/all/debug/drawable-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/Driibo/build/res/all/debug/drawable-mdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/src/main/res/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/Driibo/src/main/res/drawable-hdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/src/main/res/drawable-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/Driibo/src/main/res/drawable-mdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Driibo/build/source/r/debug/com/refactech/driibo/R.java" afterPath="$PROJECT_DIR$/Driibo/build/source/r/debug/com/refactech/driibo/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Driibo.iws" />
     <ignored path=".idea/workspace.xml" />
