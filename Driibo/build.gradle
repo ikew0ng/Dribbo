@@ -1,15 +1,15 @@
 buildscript {
     repositories {
-        maven { url 'http://repo1.maven.org/maven2' }
+        mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.4'
+        classpath 'com.android.tools.build:gradle:0.5.+'
     }
 }
 apply plugin: 'android'
 
 dependencies {
-    compile files('libs/android-support-v4.jar')
+    compile 'com.android.support:support-v4:13.0.+'
     compile files('libs/gson-2.2.4.jar')
     compile files('libs/volley.jar')
 }
@@ -17,6 +17,7 @@ dependencies {
 tasks.withType(Compile) {
     options.encoding = "UTF-8"
 }
+
 
 String VERSION_NAME = "v1.0.0"
 int VERSION_CODE = 1

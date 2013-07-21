@@ -128,7 +128,9 @@ public class MainActivity extends FragmentActivity {
         }
         mRefreshing = refreshing;
         setProgressBarIndeterminateVisibility(refreshing);
-        mMenu.findItem(R.id.action_refresh).setVisible(!refreshing);
+        if (mMenu != null) {
+            mMenu.findItem(R.id.action_refresh).setVisible(!refreshing);
+        }
     }
 
     public boolean isRefreshing() {
