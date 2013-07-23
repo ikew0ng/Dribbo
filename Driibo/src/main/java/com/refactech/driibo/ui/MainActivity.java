@@ -58,7 +58,6 @@ public class MainActivity extends FragmentActivity {
 
             public void onDrawerOpened(View drawerView) {
                 mMenu.findItem(R.id.action_refresh).setVisible(false);
-                mContentFragment.finishActionMode();
             }
         };
         mDrawerLayout.setDrawerListener(mDrawerToggle);

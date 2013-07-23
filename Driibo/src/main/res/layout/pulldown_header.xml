@@ -36,7 +36,7 @@
             android:id="@id/ptr_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:textAppearance="?android:attr/textAppearanceSmallInverse"
             android:gravity="center"/>
 
     </FrameLayout>

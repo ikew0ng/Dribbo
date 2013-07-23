@@ -21,14 +21,20 @@ import com.refactech.driibo.view.LoadingFooter;
 import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshAttacher;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
-import android.view.*;
-import android.widget.*;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AbsListView;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -51,48 +57,9 @@ public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderC
 
     private MainActivity mActivity;
 
-    private ActionMode mActionMode;
-
-    private ShareActionProvider mShareActionProvider;
-
     private PullToRefreshAttacher mPullToRefreshAttacher;
 
     private LoadingFooter mLoadingFooter;
-
-    private ActionMode.Callback mActionModeCallback = new ActionMode.Callback() {
-
-        @Override
-        public boolean onCreateActionMode(ActionMode mode, Menu menu) {
-            // Inflate a menu resource providing context menu items
-            MenuInflater inflater = mode.getMenuInflater();
-            inflater.inflate(R.menu.context_menu, menu);
-            mShareActionProvider = (ShareActionProvider) menu.findItem(R.id.action_share)
-                    .getActionProvider();
-            return true;
-        }
-
-        @Override
-        public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-            return false;
-        }
-
-        @Override
-        public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
-            return false;
-        }
-
-        @Override
-        public void onDestroyActionMode(ActionMode mode) {
-            mListView.setItemChecked(-1, true);
-            mActionMode = null;
-        }
-    };
-
-    private void setShareIntent(Intent shareIntent) {
-        if (mShareActionProvider != null) {
-            mShareActionProvider.setShareIntent(shareIntent);
-        }
-    }
 
     public static ShotsFragment newInstance(Category category) {
         ShotsFragment fragment = new ShotsFragment();
@@ -104,7 +71,7 @@ public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderC
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View contentView = inflater.inflate(R.layout.fragment_content, null);
+        View contentView = inflater.inflate(R.layout.fragment_shot, null);
         mListView = (ListView) contentView.findViewById(R.id.listView);
         parseArgument();
         mDataHelper = new ShotsDataHelper(AppData.getContext(), mCategory);
@@ -165,58 +132,13 @@ public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderC
             }
         });
 
-        // TODO Share Logic
-        // mListView.setOnItemLongClickListener(new
-        // AdapterView.OnItemLongClickListener() {
-        // @Override
-        // public boolean onItemLongClick(AdapterView<?> parent, View view, int
-        // position, long id) {
-        // Shot shot = mAdapter.getItem(position -
-        // mListView.getHeaderViewsCount());
-        // File cachedImage = RequestManager.getCachedImageFile(shot.getUrl());
-        // if (mActionMode != null) {
-        // return false;
-        // }
-        // ImageView image = (ImageView) view.findViewById(R.id.image);
-        // Drawable drawable = image.getDrawable();
-        // if (!(drawable instanceof TransitionDrawable)){
-        // return false;
-        // }
-        // Bitmap imageBitmap = ((BitmapDrawable) ((TransitionDrawable)
-        // drawable)
-        // .getDrawable(1)).getBitmap();
-        // File file = null;
-        // try {
-        // String fileName = "share";
-        // OutputStream outputStream =
-        // AppData.getContext().openFileOutput("share",
-        // Context.MODE_WORLD_WRITEABLE);
-        // imageBitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream);
-        // file = AppData.getContext().getFileStreamPath(fileName);
-        // Toast.makeText(AppData.getContext(), file.getAbsolutePath(),
-        // Toast.LENGTH_SHORT)
-        // .show();
-        // outputStream.flush();
-        // outputStream.close();
-        // } catch (FileNotFoundException e) {
-        // e.printStackTrace();
-        // } catch (IOException e) {
-        // e.printStackTrace();
-        // }
-        // mActionMode = getActivity().startActionMode(mActionModeCallback);
-        // mListView.setItemChecked(position, true);
-        //
-        // mActionMode.setTitle(getString(R.string.action_share));
-        // mActionMode.setSubtitle(shot.getTitle());
-        // Intent shareIntent = new Intent();
-        // shareIntent.setAction(Intent.ACTION_SEND);
-        // shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file));
-        // shareIntent.setType("image/jpeg");
-        // setShareIntent(shareIntent);
-        // return true;
-        // }
-        // });
         return contentView;
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        mPullToRefreshAttacher.getHeaderTransformer().onConfigurationChanged(getActivity());
     }
 
     private void parseArgument() {
@@ -306,12 +228,6 @@ public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderC
     public void loadFirstPageAndScrollToTop() {
         ListViewUtils.smoothScrollListViewToTop(mListView);
         loadFirstPage();
-    }
-
-    public void finishActionMode() {
-        if (mActionMode != null) {
-            mActionMode.finish();
-        }
     }
 
     @Override

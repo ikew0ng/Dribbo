@@ -21,8 +21,8 @@ tasks.withType(Compile) {
 }
 
 
-String VERSION_NAME = "v1.0.0"
-int VERSION_CODE = 1
+String VERSION_NAME = "v1.2.0"
+int VERSION_CODE = 2
 
 android {
     compileSdkVersion 17
