@@ -4,6 +4,7 @@ package com.refactech.driibo.ui;
 import com.refactech.driibo.R;
 import com.refactech.driibo.type.dribble.Category;
 import com.refactech.driibo.ui.fragment.DrawerFragment;
+import com.refactech.driibo.ui.fragment.LanShotsFragment;
 import com.refactech.driibo.ui.fragment.ShotsFragment;
 
 import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshAttacher;
@@ -28,7 +29,7 @@ public class MainActivity extends FragmentActivity {
 
     private ActionBarDrawerToggle mDrawerToggle;
 
-    private ShotsFragment mContentFragment;
+    private LanShotsFragment mContentFragment;
 
     private Category mCategory;
 
@@ -58,7 +59,7 @@ public class MainActivity extends FragmentActivity {
 
             public void onDrawerOpened(View drawerView) {
                 mMenu.findItem(R.id.action_refresh).setVisible(false);
-                mContentFragment.finishActionMode();
+//                mContentFragment.finishActionMode();
             }
         };
         mDrawerLayout.setDrawerListener(mDrawerToggle);
@@ -104,7 +105,7 @@ public class MainActivity extends FragmentActivity {
         }
         switch (item.getItemId()) {
             case R.id.action_refresh:
-                mContentFragment.loadFirstPageAndScrollToTop();
+//                mContentFragment.loadFirstPageAndScrollToTop();
                 return true;
             case R.id.action_settings:
                 startActivity(new Intent(this, PreferenceActivity.class));
@@ -122,7 +123,7 @@ public class MainActivity extends FragmentActivity {
         }
         mPullToRefreshAttacher.setRefreshing(false);
         mCategory = category;
-        mContentFragment = ShotsFragment.newInstance(category);
+        mContentFragment = LanShotsFragment.newInstance(category);
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.content_frame, mContentFragment).commit();
     }

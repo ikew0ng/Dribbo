@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.refactech.driibo.view.StaggeredGridView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:staggered="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/staggeredGridView"
+    staggered:numColumns="2"
+    staggered:drawSelectorOnTop="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:headerDividersEnabled="true"
+    android:footerDividersEnabled="true"
+    android:scrollbarStyle="outsideOverlay"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:choiceMode="singleChoice"
+    android:scrollingCache="true"
+    android:smoothScrollbar="true"
+    android:dividerHeight="20dip"
+    android:drawSelectorOnTop="true"
+    android:divider="@android:color/transparent"
+    />

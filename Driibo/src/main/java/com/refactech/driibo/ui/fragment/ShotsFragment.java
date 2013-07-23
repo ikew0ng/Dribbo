@@ -104,11 +104,11 @@ public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderC
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View contentView = inflater.inflate(R.layout.fragment_content, null);
+        View contentView = inflater.inflate(R.layout.fragment_shot, null);
         mListView = (ListView) contentView.findViewById(R.id.listView);
         parseArgument();
         mDataHelper = new ShotsDataHelper(AppData.getContext(), mCategory);
-        mAdapter = new ShotsAdapter(getActivity(), mListView);
+        mAdapter = new ShotsAdapter(getActivity());
         View header = new View(getActivity());
         mPullToRefreshAttacher = ((MainActivity) getActivity()).getPullToRefreshAttacher();
         mPullToRefreshAttacher.setRefreshableView(mListView, this);
