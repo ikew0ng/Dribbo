@@ -5,6 +5,10 @@ import android.os.Build.VERSION;
 import android.widget.ListView;
 
 public class ListViewUtils {
+    private ListViewUtils() {
+
+    }
+
     /**
      * 滚动列表到顶端
      * 

@@ -3,6 +3,7 @@ package com.refactech.driibo.ui.fragment;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.haarman.listviewanimations.swinginadapters.AnimationAdapter;
 import com.refactech.driibo.AppData;
 import com.refactech.driibo.R;
 import com.refactech.driibo.dao.ShotsDataHelper;
@@ -10,10 +11,14 @@ import com.refactech.driibo.data.GsonRequest;
 import com.refactech.driibo.type.dribble.Category;
 import com.refactech.driibo.type.dribble.Shot;
 import com.refactech.driibo.ui.MainActivity;
+import com.refactech.driibo.ui.adapter.CardsAnimationAdapter;
 import com.refactech.driibo.ui.adapter.ListViewUtils;
 import com.refactech.driibo.ui.adapter.ShotsAdapter;
 import com.refactech.driibo.util.CommonUtils;
 import com.refactech.driibo.vendor.DribbbleApi;
+import com.refactech.driibo.view.LoadingFooter;
+
+import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshAttacher;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -30,7 +35,8 @@ import java.util.ArrayList;
 /**
  * Created by Issac on 7/18/13.
  */
-public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderCallbacks<Cursor> {
+public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderCallbacks<Cursor>,
+        PullToRefreshAttacher.OnRefreshListener {
     public static final String EXTRA_CATEGORY = "EXTRA_CATEGORY";
 
     private Category mCategory;
@@ -47,7 +53,11 @@ public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderC
 
     private ActionMode mActionMode;
 
-    ShareActionProvider mShareActionProvider;
+    private ShareActionProvider mShareActionProvider;
+
+    private PullToRefreshAttacher mPullToRefreshAttacher;
+
+    private LoadingFooter mLoadingFooter;
 
     private ActionMode.Callback mActionModeCallback = new ActionMode.Callback() {
 
@@ -100,10 +110,15 @@ public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderC
         mDataHelper = new ShotsDataHelper(AppData.getContext(), mCategory);
         mAdapter = new ShotsAdapter(getActivity(), mListView);
         View header = new View(getActivity());
-        View footer = new View(getActivity());
+        mPullToRefreshAttacher = ((MainActivity) getActivity()).getPullToRefreshAttacher();
+        mPullToRefreshAttacher.setRefreshableView(mListView, this);
+        mLoadingFooter = new LoadingFooter(getActivity());
+
         mListView.addHeaderView(header);
-        mListView.addFooterView(footer);
-        mListView.setAdapter(mAdapter);
+        mListView.addFooterView(mLoadingFooter.getView());
+        AnimationAdapter animationAdapter = new CardsAnimationAdapter(mAdapter);
+        animationAdapter.setListView(mListView);
+        mListView.setAdapter(animationAdapter);
         getLoaderManager().initLoader(0, null, this);
         mActivity = (MainActivity) getActivity();
 
@@ -116,6 +131,10 @@ public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderC
             @Override
             public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount,
                     int totalItemCount) {
+                if (mLoadingFooter.getState() == LoadingFooter.State.Loading
+                        || mLoadingFooter.getState() == LoadingFooter.State.TheEnd) {
+                    return;
+                }
                 if (firstVisibleItem + visibleItemCount >= totalItemCount
                         && totalItemCount != 0
                         && totalItemCount != mListView.getHeaderViewsCount()
@@ -146,7 +165,7 @@ public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderC
             }
         });
 
-        //TODO Share Logic
+        // TODO Share Logic
         // mListView.setOnItemLongClickListener(new
         // AdapterView.OnItemLongClickListener() {
         // @Override
@@ -228,11 +247,11 @@ public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderC
         mAdapter.changeCursor(null);
     }
 
-    private void loadDate(final int page) {
-        if (mActivity.isRefreshing()) {
-            return;
+    private void loadData(final int page) {
+        final boolean isRefreshFromTop = page == 1;
+        if (!mPullToRefreshAttacher.isRefreshing() && isRefreshFromTop) {
+            mPullToRefreshAttacher.setRefreshing(true);
         }
-        mActivity.setRefreshing(true);
         executeRequest(new GsonRequest<Shot.ShotsRequestData>(String.format(DribbbleApi.SHOTS_LIST,
                 mCategory.name(), page), Shot.ShotsRequestData.class, null,
                 new Response.Listener<Shot.ShotsRequestData>() {
@@ -253,7 +272,11 @@ public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderC
                             @Override
                             protected void onPostExecute(Object o) {
                                 super.onPostExecute(o);
-                                mActivity.setRefreshing(false);
+                                if (isRefreshFromTop) {
+                                    mPullToRefreshAttacher.setRefreshComplete();
+                                } else {
+                                    mLoadingFooter.setState(LoadingFooter.State.Idle, 3000);
+                                }
                             }
                         });
                     }
@@ -262,23 +285,37 @@ public class ShotsFragment extends BaseFragment implements LoaderManager.LoaderC
                     public void onErrorResponse(VolleyError volleyError) {
                         Toast.makeText(getActivity(), R.string.refresh_list_failed,
                                 Toast.LENGTH_SHORT).show();
-                        mActivity.setRefreshing(false);
+                        if (isRefreshFromTop) {
+                            mPullToRefreshAttacher.setRefreshComplete();
+                        } else {
+                            mLoadingFooter.setState(LoadingFooter.State.Idle, 3000);
+                        }
                     }
                 }));
     }
 
     private void loadNextPage() {
-        loadDate(mPage + 1);
+        mLoadingFooter.setState(LoadingFooter.State.Loading);
+        loadData(mPage + 1);
     }
 
-    public void loadFirstPage() {
+    private void loadFirstPage() {
+        loadData(1);
+    }
+
+    public void loadFirstPageAndScrollToTop() {
         ListViewUtils.smoothScrollListViewToTop(mListView);
-        loadDate(1);
+        loadFirstPage();
     }
 
     public void finishActionMode() {
         if (mActionMode != null) {
             mActionMode.finish();
         }
+    }
+
+    @Override
+    public void onRefreshStarted(View view) {
+        loadFirstPage();
     }
 }

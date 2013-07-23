@@ -36,6 +36,10 @@ public class RequestManager {
 
     private static DiskBasedCache mDiskCache = (DiskBasedCache) mRequestQueue.getCache();
 
+    private RequestManager(){
+
+    }
+
     private static Cache openCache() {
         return new DiskBasedCache(CacheUtils.getExternalCacheDir(AppData.getContext()),
                 10 * 1024 * 1024);

@@ -6,6 +6,8 @@ import com.refactech.driibo.type.dribble.Category;
 import com.refactech.driibo.ui.fragment.DrawerFragment;
 import com.refactech.driibo.ui.fragment.ShotsFragment;
 
+import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshAttacher;
+
 import android.app.ActionBar;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -32,7 +34,7 @@ public class MainActivity extends FragmentActivity {
 
     private Menu mMenu;
 
-    private boolean mRefreshing = false;
+    private PullToRefreshAttacher mPullToRefreshAttacher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,19 +53,22 @@ public class MainActivity extends FragmentActivity {
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.drawable.ic_drawer,
                 R.string.drawer_open, R.string.drawer_close) {
             public void onDrawerClosed(View view) {
-                if (!mRefreshing) {
-                    mMenu.findItem(R.id.action_refresh).setVisible(true);
-                }
+                mMenu.findItem(R.id.action_refresh).setVisible(true);
             }
 
             public void onDrawerOpened(View drawerView) {
-                if (!mRefreshing) {
-                    mMenu.findItem(R.id.action_refresh).setVisible(false);
-                }
+                mMenu.findItem(R.id.action_refresh).setVisible(false);
                 mContentFragment.finishActionMode();
             }
         };
         mDrawerLayout.setDrawerListener(mDrawerToggle);
+        PullToRefreshAttacher.Options options = new PullToRefreshAttacher.Options();
+        options.headerInAnimation = R.anim.pulldown_fade_in;
+        options.headerOutAnimation = R.anim.pulldown_fade_out;
+        options.refreshScrollDistance = 0.3f;
+        options.headerLayout = R.layout.pulldown_header;
+        mPullToRefreshAttacher = new PullToRefreshAttacher(this, options);
+
         setCategory(Category.popular);
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.left_drawer, new DrawerFragment()).commit();
@@ -99,7 +104,7 @@ public class MainActivity extends FragmentActivity {
         }
         switch (item.getItemId()) {
             case R.id.action_refresh:
-                mContentFragment.loadFirstPage();
+                mContentFragment.loadFirstPageAndScrollToTop();
                 return true;
             case R.id.action_settings:
                 startActivity(new Intent(this, PreferenceActivity.class));
@@ -115,26 +120,14 @@ public class MainActivity extends FragmentActivity {
         if (mCategory == category) {
             return;
         }
-        setRefreshing(false);
+        mPullToRefreshAttacher.setRefreshing(false);
         mCategory = category;
         mContentFragment = ShotsFragment.newInstance(category);
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.content_frame, mContentFragment).commit();
     }
 
-    public void setRefreshing(boolean refreshing) {
-        if (mRefreshing == refreshing) {
-            return;
-        }
-        mRefreshing = refreshing;
-        setProgressBarIndeterminateVisibility(refreshing);
-        if (mMenu != null) {
-            mMenu.findItem(R.id.action_refresh).setVisible(!refreshing);
-        }
+    public PullToRefreshAttacher getPullToRefreshAttacher() {
+        return mPullToRefreshAttacher;
     }
-
-    public boolean isRefreshing() {
-        return mRefreshing;
-    }
-
 }

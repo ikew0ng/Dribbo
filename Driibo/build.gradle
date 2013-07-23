@@ -10,6 +10,8 @@ apply plugin: 'android'
 
 dependencies {
     compile 'com.android.support:support-v4:13.0.+'
+    compile project(':extras:ActionBar-PullToRefresh')
+    compile project(':extras:ListViewAnimationLib')
     compile files('libs/gson-2.2.4.jar')
     compile files('libs/volley.jar')
 }

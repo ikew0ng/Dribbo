@@ -6,6 +6,7 @@
     <string name="action_refresh">Refresh</string>
     <string name="action_share">Share</string>
     <string name="image_not_downloaded">Image not downloaded</string>
+    <string name="the_end">The End</string>
 
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
