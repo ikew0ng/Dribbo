@@ -6,27 +6,38 @@
     <Preference
         android:key="@string/pref_key_github"
         android:title="@string/pref_title_github">
-        <intent android:action="android.intent.action.VIEW"
-                android:data="https://github.com/IssacWang/Dribbo" />
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/IssacWang/Dribbo"/>
     </Preference>
     <Preference
         android:key="@string/pref_key_coder"
         android:summary="@string/pref_summary_coder"
         android:title="@string/pref_title_coder">
-        <intent android:action="android.intent.action.VIEW"
-                android:data="http://weibo.com/issacsuixing" />
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://weibo.com/issacsuixing"/>
     </Preference>
     <Preference
         android:key="@string/pref_key_designer"
         android:summary="@string/pref_summary_designer"
         android:title="@string/pref_title_designer">
-        <intent android:action="android.intent.action.VIEW"
-                android:data="http://weibo.com/kenefe" />
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://weibo.com/kenefe"/>
     </Preference>
     <Preference
         android:key="@string/pref_key_from"
         android:title="@string/pref_title_from">
-        <intent android:action="android.intent.action.VIEW"
-                android:data="http://www.refactech.com" />
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://www.refactech.com"/>
+    </Preference>
+    <Preference
+        android:key="@string/pref_key_donate"
+        android:title="@string/pref_title_donate">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="@string/donate_url"/>
     </Preference>
 </PreferenceScreen>

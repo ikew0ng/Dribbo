@@ -10,7 +10,7 @@
           android:choiceMode="singleChoice"
           android:scrollingCache="true"
           android:smoothScrollbar="true"
-          android:dividerHeight="20dip"
+          android:dividerHeight="15dip"
           android:drawSelectorOnTop="true"
           android:layout_width="match_parent"
           android:divider="@android:color/transparent"

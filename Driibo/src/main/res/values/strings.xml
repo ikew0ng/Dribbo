@@ -11,4 +11,6 @@
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="refresh_list_failed">Failed to refresh list.</string>
+
+    <string name="donate_url">https://m.alipay.com/personal/payment.htm?reason=给我买个键盘T_T&amp;amount=3&amp;account=issac@imid.me</string>
 </resources>
