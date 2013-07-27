@@ -1,5 +1,7 @@
 Dribbo
 ======
+A BETTER Client for Dribbble. 
+It lets you browse all categories of Dribbble, popular ,everyone and debuts.
 
 设计简约的Dribbble客户端，提供了全面的浏览功能，让你时刻紧跟潮流！
 
@@ -11,13 +13,17 @@ Dribbo
 Market
 ============
 * [Google Play](https://play.google.com/store/apps/details?id=com.refactech.driibo)
-* Xiaomi Store
-* Meizu Store
+* [Xiaomi Store](http://app.xiaomi.com/detail/42625)
+* [Meizu Store](http://app.meizu.com/phone/apps/07d60ed160004f35a329c66ad31dd999)
 
 Developed By
 ============
 * [@RefacTech碎星](http://weibo.com/issacsuixing) - <issac@imid.me>
 * [@Kenefe_Li](http://weibo.com/kenefe)
+
+Pull Requests
+===
+I will gladly accept pull requests for fixes and feature enhancements but please do them in the develop branch.
 
 
 License
