@@ -8,18 +8,21 @@ buildscript {
 }
 apply plugin: 'android'
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     compile 'com.android.support:support-v4:13.0.+'
+    compile 'com.google.code.gson:gson:2.2.4'
     compile project(':extras:ActionBar-PullToRefresh')
     compile project(':extras:ListViewAnimationLib')
-    compile files('libs/gson-2.2.4.jar')
     compile files('libs/volley.jar')
 }
 
 tasks.withType(Compile) {
     options.encoding = "UTF-8"
 }
-
 
 String VERSION_NAME = "v1.2.0"
 int VERSION_CODE = 2
