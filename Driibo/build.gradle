@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:13.0.+'
+    compile 'com.android.support:support-v4:18.0.+'
     compile 'com.google.code.gson:gson:2.2.4'
     compile project(':extras:ActionBar-PullToRefresh')
     compile project(':extras:ListViewAnimationLib')
