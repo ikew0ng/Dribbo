@@ -27,3 +27,4 @@ build/
 *.keystore
 out/
 *.iml
+local.properties
