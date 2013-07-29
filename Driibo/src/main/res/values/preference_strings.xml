@@ -12,5 +12,5 @@
     <string name="pref_key_github">pref_key_github</string>
     <string name="pref_title_github">Github</string>
     <string name="pref_key_donate">pref_key_donate</string>
-    <string name="pref_title_donate">捐助开发者</string>
+    <string name="pref_title_donate">Buy me a beer</string>
 </resources>

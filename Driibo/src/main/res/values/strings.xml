@@ -12,5 +12,5 @@
     <string name="drawer_close">Close navigation drawer</string>
     <string name="refresh_list_failed">Failed to refresh list.</string>
 
-    <string name="donate_url">https://m.alipay.com/personal/payment.htm?reason=给我买个键盘T_T&amp;amount=3&amp;account=issac@imid.me</string>
+    <string name="donate_url">https://m.alipay.com/personal/payment.htm?userId=2088502742386678&amp;reason=给我买个键盘T_T吧&amp;weChat=true&amp;amount=3</string>
 </resources>
