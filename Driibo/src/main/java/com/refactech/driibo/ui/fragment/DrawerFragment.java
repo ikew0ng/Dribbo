@@ -41,4 +41,10 @@ public class DrawerFragment extends Fragment {
         });
         return contentView;
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mAdapter.notifyDataSetChanged();
+    }
 }

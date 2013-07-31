@@ -1,5 +1,5 @@
 
-package com.refactech.driibo.ui.adapter;
+package com.refactech.driibo.util;
 
 import android.os.Build.VERSION;
 import android.widget.ListView;

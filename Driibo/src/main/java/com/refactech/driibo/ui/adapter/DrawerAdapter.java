@@ -4,7 +4,9 @@ package com.refactech.driibo.ui.adapter;
 import com.refactech.driibo.AppData;
 import com.refactech.driibo.R;
 import com.refactech.driibo.type.dribble.Category;
+import com.refactech.driibo.util.PreferenceUtils;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +26,12 @@ public class DrawerAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return Category.values().length;
+        int count = Category.values().length;
+        if (TextUtils.isEmpty(PreferenceUtils.getPrefString(
+                AppData.getContext().getString(R.string.pref_key_login), null))) {
+            return count - 2;
+        }
+        return count;
     }
 
     @Override

@@ -3,8 +3,7 @@ package com.refactech.driibo.ui;
 
 import com.refactech.driibo.R;
 import com.refactech.driibo.type.dribble.Category;
-import com.refactech.driibo.ui.fragment.DrawerFragment;
-import com.refactech.driibo.ui.fragment.ShotsFragment;
+import com.refactech.driibo.ui.fragment.*;
 
 import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshAttacher;
 
@@ -28,7 +27,7 @@ public class MainActivity extends FragmentActivity {
 
     private ActionBarDrawerToggle mDrawerToggle;
 
-    private ShotsFragment mContentFragment;
+    private BasePageListFragment mContentFragment;
 
     private Category mCategory;
 
@@ -45,10 +44,10 @@ public class MainActivity extends FragmentActivity {
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
         mDrawerLayout.setScrimColor(Color.argb(100, 0, 0, 0));
         ActionBar actionBar = getActionBar();
+        actionBar.setIcon(R.drawable.ic_actionbar);
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeButtonEnabled(true);
         actionBar.setDisplayShowTitleEnabled(false);
-        actionBar.setIcon(R.drawable.ic_actionbar);
 
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.drawable.ic_drawer,
                 R.string.drawer_open, R.string.drawer_close) {
@@ -121,7 +120,14 @@ public class MainActivity extends FragmentActivity {
         }
         mPullToRefreshAttacher.setRefreshing(false);
         mCategory = category;
-        mContentFragment = ShotsFragment.newInstance(category);
+
+        if (category == Category.following) {
+            mContentFragment = FollowingFragment.newInstance();
+        } else if (category == Category.likes) {
+            mContentFragment = LikeFragment.newInstance();
+        } else {
+            mContentFragment = ShotsFragment.newInstance(category);
+        }
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.content_frame, mContentFragment).commit();
     }

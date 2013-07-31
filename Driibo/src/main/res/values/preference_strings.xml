@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="pref_category_general">General</string>
+    <string name="pref_category_about">About</string>
+    <string name="pref_key_login">pref_key_login</string>
+    <string name="pref_title_login">User Name</string>
+    <string name="pref_summary_login">Enter user name to login</string>
     <string name="pref_key_version">pref_key_version</string>
     <string name="pref_key_from">pref_key_from</string>
     <string name="pref_title_from">Powered by RefacTech</string>
@@ -12,5 +17,5 @@
     <string name="pref_key_github">pref_key_github</string>
     <string name="pref_title_github">Github</string>
     <string name="pref_key_donate">pref_key_donate</string>
-    <string name="pref_title_donate">Buy me a beer</string>
+    <string name="pref_title_donate">Donate!</string>
 </resources>

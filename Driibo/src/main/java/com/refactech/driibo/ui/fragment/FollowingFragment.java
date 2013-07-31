@@ -7,6 +7,7 @@ import com.refactech.driibo.dao.ShotsDataHelper;
 import com.refactech.driibo.type.dribble.Category;
 import com.refactech.driibo.type.dribble.Shot;
 import com.refactech.driibo.ui.adapter.ShotsAdapter;
+import com.refactech.driibo.util.PreferenceUtils;
 import com.refactech.driibo.vendor.DribbbleApi;
 
 import android.content.Intent;
@@ -27,27 +28,20 @@ import java.util.ArrayList;
 /**
  * Created by Issac on 7/18/13.
  */
-public class ShotsFragment extends BasePageListFragment<Shot.ShotsRequestData> implements
+public class FollowingFragment extends BasePageListFragment<Shot.ShotsRequestData> implements
         LoaderManager.LoaderCallbacks<Cursor> {
-    public static final String EXTRA_CATEGORY = "EXTRA_CATEGORY";
-
-    private Category mCategory;
 
     private ShotsDataHelper mDataHelper;
 
-    public static ShotsFragment newInstance(Category category) {
-        ShotsFragment fragment = new ShotsFragment();
-        Bundle bundle = new Bundle();
-        bundle.putString(EXTRA_CATEGORY, category.name());
-        fragment.setArguments(bundle);
+    public static FollowingFragment newInstance() {
+        FollowingFragment fragment = new FollowingFragment();
         return fragment;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View contentView = super.onCreateView(inflater, container, savedInstanceState);
-        parseArgument();
-        mDataHelper = new ShotsDataHelper(AppData.getContext(), mCategory);
+        mDataHelper = new ShotsDataHelper(AppData.getContext(), Category.following);
 
         getLoaderManager().initLoader(0, null, this);
 
@@ -74,11 +68,6 @@ public class ShotsFragment extends BasePageListFragment<Shot.ShotsRequestData> i
         });
 
         return contentView;
-    }
-
-    private void parseArgument() {
-        Bundle bundle = getArguments();
-        mCategory = Category.valueOf(bundle.getString(EXTRA_CATEGORY));
     }
 
     @Override
@@ -126,7 +115,10 @@ public class ShotsFragment extends BasePageListFragment<Shot.ShotsRequestData> i
 
     @Override
     protected String getUrl(int page) {
-        return String.format(DribbbleApi.SHOTS_LIST, mCategory.name(), page);
+        return String.format(
+                DribbbleApi.FOLLOWING,
+                PreferenceUtils.getPrefString(getString(R.string.pref_key_login), null).replaceAll(
+                        " ", ""), page);
     }
 
     @Override
