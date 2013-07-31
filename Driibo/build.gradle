@@ -24,8 +24,8 @@ tasks.withType(Compile) {
     options.encoding = "UTF-8"
 }
 
-String VERSION_NAME = "v1.2.0"
-int VERSION_CODE = 2
+String VERSION_NAME = "v1.3.0"
+int VERSION_CODE = 3
 
 android {
     compileSdkVersion 17
