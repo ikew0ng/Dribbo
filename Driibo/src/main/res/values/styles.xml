@@ -9,6 +9,8 @@
         <item name="ic_view">@drawable/ic_view</item>
         <item name="ic_like">@drawable/ic_like</item>
         <item name="ic_comment">@drawable/ic_comment</item>
+
+        <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
     </style>
 
     <style name="ActionbarStyle" parent="android:Widget.Holo.ActionBar">
@@ -23,4 +25,13 @@
     <style name="ActionbarOverFlowStyle" parent="@android:style/Widget.Holo.ActionButton.Overflow">
         <item name="android:src">@drawable/ic_action_overflow</item>
     </style>
+
+    <style name="Widget.Custom.PtrHeader" parent="android:Widget">
+
+        <item name="ptrHeaderTitleTextAppearance">?android:attr/textAppearanceSmallInverse</item>
+        <!--<item name="ptrProgressBarStyle">inside</item>-->
+        <item name="ptrProgressBarColor">@color/dribbble_pink</item>
+
+    </style>
+
 </resources>

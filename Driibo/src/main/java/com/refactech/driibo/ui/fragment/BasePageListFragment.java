@@ -1,19 +1,6 @@
 
 package com.refactech.driibo.ui.fragment;
 
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.haarman.listviewanimations.swinginadapters.AnimationAdapter;
-import com.refactech.driibo.R;
-import com.refactech.driibo.data.GsonRequest;
-import com.refactech.driibo.ui.MainActivity;
-import com.refactech.driibo.ui.adapter.CardsAnimationAdapter;
-import com.refactech.driibo.util.ListViewUtils;
-import com.refactech.driibo.util.CommonUtils;
-import com.refactech.driibo.view.LoadingFooter;
-
-import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshAttacher;
-
 import android.content.res.Configuration;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -25,28 +12,67 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.haarman.listviewanimations.swinginadapters.AnimationAdapter;
+import com.refactech.driibo.R;
+import com.refactech.driibo.data.GsonRequest;
+import com.refactech.driibo.ui.adapter.CardsAnimationAdapter;
+import com.refactech.driibo.util.CommonUtils;
+import com.refactech.driibo.util.ListViewUtils;
+import com.refactech.driibo.view.LoadingFooter;
+
+import uk.co.senab.actionbarpulltorefresh.library.ActionBarPullToRefresh;
+import uk.co.senab.actionbarpulltorefresh.library.Options;
+import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout;
+import uk.co.senab.actionbarpulltorefresh.library.listeners.OnRefreshListener;
+
 /**
  * Created by Issac on 7/31/13.
  */
 public abstract class BasePageListFragment<T> extends BaseFragment implements
-        PullToRefreshAttacher.OnRefreshListener {
+        OnRefreshListener {
     private BaseAdapter mAdapter;
 
     protected ListView mListView;
 
     protected int mPage = 1;
 
-    private PullToRefreshAttacher mPullToRefreshAttacher;
+    private PullToRefreshLayout mPullToRefreshLayout;
 
     private LoadingFooter mLoadingFooter;
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        ViewGroup viewGroup = (ViewGroup) view;
+        mPullToRefreshLayout = new PullToRefreshLayout(viewGroup.getContext());
+        ActionBarPullToRefresh.from(getActivity())
+                .insertLayoutInto(viewGroup)
+                .theseChildrenArePullable(R.id.listView)
+                .listener(this)
+                .options(Options.create()
+                        .scrollDistance(0.3f)
+                        .build())
+                .setup(mPullToRefreshLayout);
+        mPullToRefreshLayout.setRefreshing(false);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View contentView = inflater.inflate(getContentViewResId(), null);
         mListView = (ListView) contentView.findViewById(R.id.listView);
         View header = new View(getActivity());
-        mPullToRefreshAttacher = ((MainActivity) getActivity()).getPullToRefreshAttacher();
-        mPullToRefreshAttacher.setRefreshableView(mListView, this);
+//        mPullToRefreshLayout = ((MainActivity) getActivity()).getPullToRefreshLayout();
+//        ActionBarPullToRefresh.from(getActivity())
+//                .allChildrenArePullable()
+//                .listener(this)
+//                .options(Options.create()
+//                        .scrollDistance(0.3f)
+//                        .headerLayout(R.layout.pulldown_header)
+//                        .build())
+//                .setup(mPullToRefreshLayout);
         mLoadingFooter = new LoadingFooter(getActivity());
 
         mListView.addHeaderView(header);
@@ -83,13 +109,13 @@ public abstract class BasePageListFragment<T> extends BaseFragment implements
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        mPullToRefreshAttacher.getHeaderTransformer().onConfigurationChanged(getActivity());
+        mPullToRefreshLayout.getHeaderTransformer().onConfigurationChanged(getActivity(), newConfig);
     }
 
     protected void loadData(final int page) {
         final boolean isRefreshFromTop = page == 1;
-        if (!mPullToRefreshAttacher.isRefreshing() && isRefreshFromTop) {
-            mPullToRefreshAttacher.setRefreshing(true);
+        if (!mPullToRefreshLayout.isRefreshing() && isRefreshFromTop) {
+            mPullToRefreshLayout.setRefreshing(true);
         }
         executeRequest(new GsonRequest<T>(getUrl(page), getResponseDataClass(), null,
                 new Response.Listener<T>() {
@@ -106,7 +132,7 @@ public abstract class BasePageListFragment<T> extends BaseFragment implements
                             protected void onPostExecute(Object o) {
                                 super.onPostExecute(o);
                                 if (isRefreshFromTop) {
-                                    mPullToRefreshAttacher.setRefreshComplete();
+                                    mPullToRefreshLayout.setRefreshComplete();
                                 } else {
                                     mLoadingFooter.setState(LoadingFooter.State.Idle, 3000);
                                 }
@@ -119,7 +145,7 @@ public abstract class BasePageListFragment<T> extends BaseFragment implements
                         Toast.makeText(getActivity(), R.string.refresh_list_failed,
                                 Toast.LENGTH_SHORT).show();
                         if (isRefreshFromTop) {
-                            mPullToRefreshAttacher.setRefreshComplete();
+                            mPullToRefreshLayout.setRefreshComplete();
                         } else {
                             mLoadingFooter.setState(LoadingFooter.State.Idle, 3000);
                         }

@@ -1,12 +1,6 @@
 
 package com.refactech.driibo.ui;
 
-import com.refactech.driibo.R;
-import com.refactech.driibo.type.dribble.Category;
-import com.refactech.driibo.ui.fragment.*;
-
-import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshAttacher;
-
 import android.app.ActionBar;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -22,6 +16,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 
+import com.refactech.driibo.R;
+import com.refactech.driibo.type.dribble.Category;
+import com.refactech.driibo.ui.fragment.BasePageListFragment;
+import com.refactech.driibo.ui.fragment.DrawerFragment;
+import com.refactech.driibo.ui.fragment.FollowingFragment;
+import com.refactech.driibo.ui.fragment.LikeFragment;
+import com.refactech.driibo.ui.fragment.ShotsFragment;
+
 public class MainActivity extends FragmentActivity {
     private DrawerLayout mDrawerLayout;
 
@@ -32,8 +34,6 @@ public class MainActivity extends FragmentActivity {
     private Category mCategory;
 
     private Menu mMenu;
-
-    private PullToRefreshAttacher mPullToRefreshAttacher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,12 +60,6 @@ public class MainActivity extends FragmentActivity {
             }
         };
         mDrawerLayout.setDrawerListener(mDrawerToggle);
-        PullToRefreshAttacher.Options options = new PullToRefreshAttacher.Options();
-        options.headerInAnimation = R.anim.pulldown_fade_in;
-        options.headerOutAnimation = R.anim.pulldown_fade_out;
-        options.refreshScrollDistance = 0.3f;
-        options.headerLayout = R.layout.pulldown_header;
-        mPullToRefreshAttacher = new PullToRefreshAttacher(this, options);
 
         setCategory(Category.popular);
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -118,7 +112,6 @@ public class MainActivity extends FragmentActivity {
         if (mCategory == category) {
             return;
         }
-        mPullToRefreshAttacher.setRefreshing(false);
         mCategory = category;
 
         if (category == Category.following) {
@@ -132,7 +125,4 @@ public class MainActivity extends FragmentActivity {
         fragmentManager.beginTransaction().replace(R.id.content_frame, mContentFragment).commit();
     }
 
-    public PullToRefreshAttacher getPullToRefreshAttacher() {
-        return mPullToRefreshAttacher;
-    }
 }
