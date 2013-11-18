@@ -8,16 +8,15 @@ buildscript {
 }
 apply plugin: 'android-library'
 
-dependencies {
-}
+dependencies {}
 
 android {
-    compileSdkVersion 17
-    buildToolsVersion "17"
+    compileSdkVersion 18
+    buildToolsVersion '18.1.1'
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 14
+        targetSdkVersion 18
     }
     sourceSets {
         main {

@@ -1,1 +1,1 @@
-include ':Driibo', ':extras:ActionBar-PullToRefresh', ':extras:ListViewAnimationLib'
+include ':Driibo', ':extras:ListViewAnimationLib'

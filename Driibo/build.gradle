@@ -15,7 +15,7 @@ repositories {
 dependencies {
     compile 'com.android.support:support-v4:18.0.+'
     compile 'com.google.code.gson:gson:2.2.4'
-    compile project(':extras:ActionBar-PullToRefresh')
+    compile 'com.github.chrisbanes.actionbarpulltorefresh:library:+'
     compile project(':extras:ListViewAnimationLib')
     compile files('libs/volley.jar')
 }
@@ -28,28 +28,28 @@ String VERSION_NAME = "v1.3.0"
 int VERSION_CODE = 3
 
 android {
-    compileSdkVersion 17
-    buildToolsVersion "17.0.0"
+    compileSdkVersion 18
+    buildToolsVersion "18.1.1"
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 14
+        targetSdkVersion 18
         versionCode VERSION_CODE
         versionName VERSION_NAME
     }
 
-    signingConfigs {
-        driibo {
-            storeFile file("../RefacTech.keystore")
-            storePassword "RefacTech"
-            keyAlias "Driibo"
-            keyPassword "RefacTech"
-        }
-    }
-
-    buildTypes {
-        release {
-            signingConfig signingConfigs.driibo
-        }
-    }
+//    signingConfigs {
+//        driibo {
+//            storeFile file("../RefacTech.keystore")
+//            storePassword "RefacTech"
+//            keyAlias "Driibo"
+//            keyPassword "RefacTech"
+//        }
+//    }
+//
+//    buildTypes {
+//        release {
+//            signingConfig signingConfigs.driibo
+//        }
+//    }
 }
