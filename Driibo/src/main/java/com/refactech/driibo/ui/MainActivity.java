@@ -3,9 +3,11 @@ package com.refactech.driibo.ui;
 
 import com.refactech.driibo.R;
 import com.refactech.driibo.type.dribble.Category;
-import com.refactech.driibo.ui.fragment.*;
-
-import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshAttacher;
+import com.refactech.driibo.ui.fragment.BasePageListFragment;
+import com.refactech.driibo.ui.fragment.DrawerFragment;
+import com.refactech.driibo.ui.fragment.FollowingFragment;
+import com.refactech.driibo.ui.fragment.LikeFragment;
+import com.refactech.driibo.ui.fragment.ShotsFragment;
 
 import android.app.ActionBar;
 import android.content.Intent;
@@ -21,6 +23,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
+
+import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshAttacher;
 
 public class MainActivity extends FragmentActivity {
     private DrawerLayout mDrawerLayout;

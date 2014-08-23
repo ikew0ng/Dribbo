@@ -3,21 +3,21 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.5.+'
+        classpath 'com.android.tools.build:gradle:0.12.2'
     }
 }
-apply plugin: 'android'
+apply plugin: 'com.android.application'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:18.0.+'
+    compile 'com.android.support:support-v4:19.1.0'
     compile 'com.google.code.gson:gson:2.2.4'
+    compile files('libs/volley.jar')
     compile project(':extras:ActionBar-PullToRefresh')
     compile project(':extras:ListViewAnimationLib')
-    compile files('libs/volley.jar')
 }
 
 tasks.withType(Compile) {
@@ -29,7 +29,7 @@ int VERSION_CODE = 3
 
 android {
     compileSdkVersion 17
-    buildToolsVersion "17.0.0"
+    buildToolsVersion '19.1.0'
 
     defaultConfig {
         minSdkVersion 14
@@ -47,9 +47,31 @@ android {
         }
     }
 
+    signingConfigs {
+        signing
+    }
+
     buildTypes {
         release {
-            signingConfig signingConfigs.driibo
+            if (project.hasProperty('storeFile')) {
+                signingConfig signingConfigs.signing
+            }
         }
     }
+}
+
+if (project.hasProperty('storeFile')) {
+    android.signingConfigs.signing.storeFile = file(storeFile)
+}
+
+if (project.hasProperty('storePassword')) {
+    android.signingConfigs.signing.storePassword = storePassword
+}
+
+if (project.hasProperty('keyAlias')) {
+    android.signingConfigs.signing.keyAlias = keyAlias
+}
+
+if (project.hasProperty('keyPassword')) {
+    android.signingConfigs.signing.keyPassword = keyPassword
 }
