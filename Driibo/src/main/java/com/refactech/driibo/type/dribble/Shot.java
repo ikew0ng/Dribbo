@@ -58,7 +58,7 @@ public class Shot extends BaseType {
     }
 
     public static Shot fromCursor(Cursor cursor) {
-        long id = cursor.getLong(cursor.getColumnIndex(ShotsDataHelper.ShotsDBInfo._ID));
+        long id = cursor.getLong(cursor.getColumnIndex(ShotsDataHelper.ShotsDBInfo.ID));
         Shot shot = getFromCache(id);
         if (shot != null) {
             return shot;
